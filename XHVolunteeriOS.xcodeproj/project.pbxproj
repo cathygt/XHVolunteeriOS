@@ -405,6 +405,7 @@
 				7884EB9F1ADBA02500CC97F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7884EBA01ADBA02500CC97F0 /* Build configuration list for PBXNativeTarget "XHVolunteeriOSTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				7884EBA21ADBA02500CC97F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
