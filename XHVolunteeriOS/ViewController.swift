@@ -20,10 +20,5 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func cancelToNewNoteViewController(segue:UIStoryboardSegue)
-    {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
-
 }
 
