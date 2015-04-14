@@ -13,10 +13,14 @@
 		7884EB8E1ADBA02500CC97F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7884EB8C1ADBA02500CC97F0 /* LaunchScreen.xib */; };
 		7884EB9A1ADBA02500CC97F0 /* XHVolunteeriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7884EB991ADBA02500CC97F0 /* XHVolunteeriOSTests.swift */; };
 		7884EBA51ADBC54D00CC97F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7884EBA31ADBC54D00CC97F0 /* Main.storyboard */; };
+		78CC759F1ADD13A800CFC2CB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC759E1ADD13A800CFC2CB /* MainViewController.swift */; };
 		78DEC8501ADCBA9300AC1846 /* RecruitActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DEC84F1ADCBA9300AC1846 /* RecruitActivityTableViewController.swift */; };
 		78DEC8521ADCBB5100AC1846 /* QRcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DEC8511ADCBB5100AC1846 /* QRcodeViewController.swift */; };
 		78DEC8541ADCBC7C00AC1846 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DEC8531ADCBC7C00AC1846 /* SettingTableViewController.swift */; };
 		78DEC8561ADCBF8F00AC1846 /* MyActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DEC8551ADCBF8F00AC1846 /* MyActivityTableViewController.swift */; };
+		78DEC85B1ADCEEB200AC1846 /* ActivityDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DEC85A1ADCEEB200AC1846 /* ActivityDetailTableViewController.swift */; };
+		78DEC85D1ADCEF4A00AC1846 /* SettingEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DEC85C1ADCEF4A00AC1846 /* SettingEditTableViewController.swift */; };
+		78DEC85F1ADD0BBD00AC1846 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DEC85E1ADD0BBD00AC1846 /* Activity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +44,14 @@
 		7884EB981ADBA02500CC97F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7884EB991ADBA02500CC97F0 /* XHVolunteeriOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XHVolunteeriOSTests.swift; sourceTree = "<group>"; };
 		7884EBA41ADBC54D00CC97F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		78DEC84F1ADCBA9300AC1846 /* RecruitActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecruitActivityTableViewController.swift; sourceTree = "<group>"; };
-		78DEC8511ADCBB5100AC1846 /* QRcodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRcodeViewController.swift; sourceTree = "<group>"; };
-		78DEC8531ADCBC7C00AC1846 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
-		78DEC8551ADCBF8F00AC1846 /* MyActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyActivityTableViewController.swift; sourceTree = "<group>"; };
+		78CC759E1ADD13A800CFC2CB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		78DEC84F1ADCBA9300AC1846 /* RecruitActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecruitActivityTableViewController.swift; path = XHVolunteeriOS/RecruitActivityTableViewController.swift; sourceTree = "<group>"; };
+		78DEC8511ADCBB5100AC1846 /* QRcodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRcodeViewController.swift; path = XHVolunteeriOS/QRcodeViewController.swift; sourceTree = "<group>"; };
+		78DEC8531ADCBC7C00AC1846 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingTableViewController.swift; path = XHVolunteeriOS/SettingTableViewController.swift; sourceTree = "<group>"; };
+		78DEC8551ADCBF8F00AC1846 /* MyActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyActivityTableViewController.swift; path = XHVolunteeriOS/MyActivityTableViewController.swift; sourceTree = "<group>"; };
+		78DEC85A1ADCEEB200AC1846 /* ActivityDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailTableViewController.swift; sourceTree = "<group>"; };
+		78DEC85C1ADCEF4A00AC1846 /* SettingEditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingEditTableViewController.swift; sourceTree = "<group>"; };
+		78DEC85E1ADD0BBD00AC1846 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,9 @@
 		7884EB751ADBA02400CC97F0 = {
 			isa = PBXGroup;
 			children = (
+				78DEC8581ADCEDDB00AC1846 /* Model */,
+				78DEC8591ADCEDE600AC1846 /* View */,
+				78DEC8571ADCEDC600AC1846 /* Controller */,
 				7884EB801ADBA02500CC97F0 /* XHVolunteeriOS */,
 				7884EB961ADBA02500CC97F0 /* XHVolunteeriOSTests */,
 				7884EB7F1ADBA02500CC97F0 /* Products */,
@@ -87,10 +98,6 @@
 			children = (
 				7884EB831ADBA02500CC97F0 /* AppDelegate.swift */,
 				7884EB851ADBA02500CC97F0 /* ViewController.swift */,
-				78DEC84F1ADCBA9300AC1846 /* RecruitActivityTableViewController.swift */,
-				78DEC8511ADCBB5100AC1846 /* QRcodeViewController.swift */,
-				78DEC8551ADCBF8F00AC1846 /* MyActivityTableViewController.swift */,
-				78DEC8531ADCBC7C00AC1846 /* SettingTableViewController.swift */,
 				7884EB8A1ADBA02500CC97F0 /* Images.xcassets */,
 				7884EBA31ADBC54D00CC97F0 /* Main.storyboard */,
 				7884EB8C1ADBA02500CC97F0 /* LaunchScreen.xib */,
@@ -122,6 +129,35 @@
 				7884EB981ADBA02500CC97F0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78DEC8571ADCEDC600AC1846 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				78DEC84F1ADCBA9300AC1846 /* RecruitActivityTableViewController.swift */,
+				78CC759E1ADD13A800CFC2CB /* MainViewController.swift */,
+				78DEC8511ADCBB5100AC1846 /* QRcodeViewController.swift */,
+				78DEC8551ADCBF8F00AC1846 /* MyActivityTableViewController.swift */,
+				78DEC8531ADCBC7C00AC1846 /* SettingTableViewController.swift */,
+				78DEC85A1ADCEEB200AC1846 /* ActivityDetailTableViewController.swift */,
+				78DEC85C1ADCEF4A00AC1846 /* SettingEditTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		78DEC8581ADCEDDB00AC1846 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78DEC85E1ADD0BBD00AC1846 /* Activity.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		78DEC8591ADCEDE600AC1846 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,10 +262,14 @@
 			files = (
 				78DEC8501ADCBA9300AC1846 /* RecruitActivityTableViewController.swift in Sources */,
 				7884EB861ADBA02500CC97F0 /* ViewController.swift in Sources */,
+				78DEC85D1ADCEF4A00AC1846 /* SettingEditTableViewController.swift in Sources */,
 				78DEC8561ADCBF8F00AC1846 /* MyActivityTableViewController.swift in Sources */,
 				78DEC8521ADCBB5100AC1846 /* QRcodeViewController.swift in Sources */,
+				78DEC85B1ADCEEB200AC1846 /* ActivityDetailTableViewController.swift in Sources */,
+				78DEC85F1ADD0BBD00AC1846 /* Activity.swift in Sources */,
 				7884EB841ADBA02500CC97F0 /* AppDelegate.swift in Sources */,
 				78DEC8541ADCBC7C00AC1846 /* SettingTableViewController.swift in Sources */,
+				78CC759F1ADD13A800CFC2CB /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

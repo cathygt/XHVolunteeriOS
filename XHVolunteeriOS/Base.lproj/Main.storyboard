@@ -22,8 +22,24 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Yy-TL-52A" id="ZFM-h6-Lb8">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="开始时间: 2015-4-10 13:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVg-FR-Bne">
-                                                    <rect key="frame" x="8" y="33" width="174" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="敬老院慰问" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fw5-PW-U9w">
+                                                    <rect key="frame" x="8" y="12" width="334" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结束时间: 2015-4-10 13:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ww-Wk-xb8">
+                                                    <rect key="frame" x="8" y="50" width="174" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="174" id="5BX-25-u5h"/>
+                                                        <constraint firstAttribute="height" constant="21" id="zha-C4-fiD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始时间: 2015-4-10 13:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVg-FR-Bne">
+                                                    <rect key="frame" x="8" y="35" width="174" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="174" id="zgw-fE-ySC"/>
                                                     </constraints>
@@ -31,29 +47,16 @@
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="结束时间: 2015-4-10 13:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ww-Wk-xb8">
-                                                    <rect key="frame" x="8" y="49" width="174" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="174" id="5BX-25-u5h"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="敬老院慰问" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fw5-PW-U9w">
-                                                    <rect key="frame" x="8" y="13" width="334" height="23"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Fw5-PW-U9w" firstAttribute="top" secondItem="ZFM-h6-Lb8" secondAttribute="top" constant="12" id="DNX-XD-T3Q"/>
-                                                <constraint firstItem="ZVg-FR-Bne" firstAttribute="top" secondItem="ZFM-h6-Lb8" secondAttribute="topMargin" constant="25" id="QTD-6K-o5g"/>
-                                                <constraint firstAttribute="bottom" secondItem="ZVg-FR-Bne" secondAttribute="bottom" constant="22" id="Whv-4i-3vc"/>
+                                                <constraint firstItem="5Ww-Wk-xb8" firstAttribute="top" secondItem="Fw5-PW-U9w" secondAttribute="bottom" constant="15" id="LyD-X0-FJa"/>
+                                                <constraint firstItem="ZVg-FR-Bne" firstAttribute="top" secondItem="ZFM-h6-Lb8" secondAttribute="topMargin" constant="27" id="QTD-6K-o5g"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZVg-FR-Bne" secondAttribute="bottom" constant="20" id="Whv-4i-3vc"/>
                                                 <constraint firstItem="ZVg-FR-Bne" firstAttribute="leading" secondItem="ZFM-h6-Lb8" secondAttribute="leading" constant="8" id="ZGf-CR-e5U"/>
                                                 <constraint firstAttribute="trailing" secondItem="Fw5-PW-U9w" secondAttribute="trailing" id="cqO-5J-os9"/>
                                                 <constraint firstItem="Fw5-PW-U9w" firstAttribute="leading" secondItem="ZFM-h6-Lb8" secondAttribute="leading" constant="8" id="g2l-xQ-jph"/>
+                                                <constraint firstItem="5Ww-Wk-xb8" firstAttribute="leading" secondItem="ZVg-FR-Bne" secondAttribute="leading" id="m16-Gp-ukP"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -398,7 +401,7 @@
         <!--编辑个人设置-->
         <scene sceneID="Id6-gy-mpB">
             <objects>
-                <tableViewController id="nLK-uy-7bP" sceneMemberID="viewController">
+                <tableViewController id="nLK-uy-7bP" customClass="SettingEditTableViewController" customModule="XHVolunteeriOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="tth-Az-fJv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -719,7 +722,7 @@
         <!--活动详情-->
         <scene sceneID="m3N-Kj-PNP">
             <objects>
-                <tableViewController id="XzU-dS-VTa" sceneMemberID="viewController">
+                <tableViewController id="XzU-dS-VTa" customClass="ActivityDetailTableViewController" customModule="XHVolunteeriOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="t9J-QQ-YT2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -958,6 +961,71 @@
             </objects>
             <point key="canvasLocation" x="1702.5" y="75.5"/>
         </scene>
+        <!--所有活动-->
+        <scene sceneID="ogr-w8-e6W">
+            <objects>
+                <tableViewController title="所有活动" id="V8j-XE-POV" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="k0t-9M-J44">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lXc-xP-yd2">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lXc-xP-yd2" id="ag4-5w-hml">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="V8j-XE-POV" id="Ers-OS-qyu"/>
+                            <outlet property="delegate" destination="V8j-XE-POV" id="WBC-93-BaL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="所有活动" id="KDb-5Y-iJD"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7Z-Io-2Gu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1090.5" y="-1010.5"/>
+        </scene>
+        <!--所有活动-->
+        <scene sceneID="eBQ-Wo-Esn">
+            <objects>
+                <navigationController title="所有活动" id="ZCb-j0-Pam" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="所有活动" image="List" id="yCy-rc-Yae"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aE4-dl-JHZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="V8j-XE-POV" kind="relationship" relationship="rootViewController" id="YP0-eN-e6g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yPw-wn-VUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636.5" y="-1010.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qbo-P9-URC">
+            <objects>
+                <tabBarController id="Wmc-o8-kcD" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="AR1-dV-cUd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZCb-j0-Pam" kind="relationship" relationship="viewControllers" id="n6W-e9-QYl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nju-9N-GrV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.5" y="-1010.5"/>
+        </scene>
         <!--招募活动-->
         <scene sceneID="3XJ-e2-3hp">
             <objects>
@@ -977,10 +1045,10 @@
             </objects>
             <point key="canvasLocation" x="636.5" y="-279.5"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main View Controller-->
         <scene sceneID="1cZ-Oq-b1V">
             <objects>
-                <tabBarController id="uqG-Z1-dkh" sceneMemberID="viewController">
+                <tabBarController id="uqG-Z1-dkh" customClass="MainViewController" customModule="XHVolunteeriOS" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="YPJ-Sa-AeB">
@@ -1005,6 +1073,6 @@
         <image name="setting" width="19" height="19"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="34J-a9-dmj"/>
+        <segue reference="Bka-0z-g5m"/>
     </inferredMetricsTieBreakers>
 </document>
