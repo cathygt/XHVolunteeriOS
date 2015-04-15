@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Activity: NSObject {
+class ActivityInfos: NSObject {
     var IndexId:Int //序号
     var TeamName:String //组别名称
     var UserName:String //发布者用户名称
