@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		782195951AE2462E0018AC26 /* UserReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782195941AE2462E0018AC26 /* UserReposity.swift */; };
+		782195971AE2463A0018AC26 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782195961AE2463A0018AC26 /* LoginViewController.swift */; };
+		782195E51AE24AC80018AC26 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782195E41AE24AC80018AC26 /* SwiftyJSON.swift */; };
 		7884EB841ADBA02500CC97F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7884EB831ADBA02500CC97F0 /* AppDelegate.swift */; };
 		7884EB861ADBA02500CC97F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7884EB851ADBA02500CC97F0 /* ViewController.swift */; };
 		7884EB8B1ADBA02500CC97F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7884EB8A1ADBA02500CC97F0 /* Images.xcassets */; };
@@ -28,6 +31,7 @@
 		78DEC85B1ADCEEB200AC1846 /* ActivityDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DEC85A1ADCEEB200AC1846 /* ActivityDetailTableViewController.swift */; };
 		78DEC85D1ADCEF4A00AC1846 /* SettingEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DEC85C1ADCEF4A00AC1846 /* SettingEditTableViewController.swift */; };
 		78DEC85F1ADD0BBD00AC1846 /* ActivityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DEC85E1ADD0BBD00AC1846 /* ActivityInfo.swift */; };
+		78F0E95F1AE1108300562E8D /* ActivityReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F0E95E1AE1108300562E8D /* ActivityReposity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		782195941AE2462E0018AC26 /* UserReposity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserReposity.swift; sourceTree = "<group>"; };
+		782195961AE2463A0018AC26 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		782195E41AE24AC80018AC26 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		7884EB7E1ADBA02500CC97F0 /* XHVolunteeriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XHVolunteeriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7884EB821ADBA02500CC97F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7884EB831ADBA02500CC97F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +73,7 @@
 		78DEC85A1ADCEEB200AC1846 /* ActivityDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailTableViewController.swift; sourceTree = "<group>"; };
 		78DEC85C1ADCEF4A00AC1846 /* SettingEditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingEditTableViewController.swift; sourceTree = "<group>"; };
 		78DEC85E1ADD0BBD00AC1846 /* ActivityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityInfo.swift; sourceTree = "<group>"; };
+		78F0E95E1AE1108300562E8D /* ActivityReposity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityReposity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,8 @@
 		7884EB751ADBA02400CC97F0 = {
 			isa = PBXGroup;
 			children = (
+				782195E41AE24AC80018AC26 /* SwiftyJSON.swift */,
+				78F0E95D1AE1104400562E8D /* NetMethod */,
 				78CC75A01ADE0C5400CFC2CB /* Protocal */,
 				78DEC8581ADCEDDB00AC1846 /* Model */,
 				78DEC8591ADCEDE600AC1846 /* View */,
@@ -165,6 +175,7 @@
 				78DEC8531ADCBC7C00AC1846 /* SettingTableViewController.swift */,
 				78DEC85A1ADCEEB200AC1846 /* ActivityDetailTableViewController.swift */,
 				78DEC85C1ADCEF4A00AC1846 /* SettingEditTableViewController.swift */,
+				782195961AE2463A0018AC26 /* LoginViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -187,6 +198,15 @@
 			children = (
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		78F0E95D1AE1104400562E8D /* NetMethod */ = {
+			isa = PBXGroup;
+			children = (
+				78F0E95E1AE1108300562E8D /* ActivityReposity.swift */,
+				782195941AE2462E0018AC26 /* UserReposity.swift */,
+			);
+			name = NetMethod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,15 +315,19 @@
 				78DEC85D1ADCEF4A00AC1846 /* SettingEditTableViewController.swift in Sources */,
 				78DEC8561ADCBF8F00AC1846 /* MyActivityTableViewController.swift in Sources */,
 				78DEC8521ADCBB5100AC1846 /* QRcodeViewController.swift in Sources */,
+				782195951AE2462E0018AC26 /* UserReposity.swift in Sources */,
 				78DEC85B1ADCEEB200AC1846 /* ActivityDetailTableViewController.swift in Sources */,
+				782195971AE2463A0018AC26 /* LoginViewController.swift in Sources */,
 				78CC75AA1ADE5B3100CFC2CB /* Login.swift in Sources */,
 				78DEC85F1ADD0BBD00AC1846 /* ActivityInfo.swift in Sources */,
 				7884EB841ADBA02500CC97F0 /* AppDelegate.swift in Sources */,
+				782195E51AE24AC80018AC26 /* SwiftyJSON.swift in Sources */,
 				78DEC8541ADCBC7C00AC1846 /* SettingTableViewController.swift in Sources */,
 				78CC75A61ADE552500CFC2CB /* EditUserInfo.swift in Sources */,
 				78CC75A41ADE4FA800CFC2CB /* IUserReposity.swift in Sources */,
 				78CC75A21ADE10A200CFC2CB /* IActivityReposity.swift in Sources */,
 				78CC759F1ADD13A800CFC2CB /* MainViewController.swift in Sources */,
+				78F0E95F1AE1108300562E8D /* ActivityReposity.swift in Sources */,
 				78CC75AC1ADE640A00CFC2CB /* PullDown.swift in Sources */,
 				78CC75A81ADE563500CFC2CB /* GetUserInfo.swift in Sources */,
 			);
