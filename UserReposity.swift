@@ -8,12 +8,12 @@
 
 import Foundation
 
-private var responseData : NSMutableData!
-
-func UserLogin(用户名 UserName:String, 密码 Password:String) -> String //登录
+func UserLogin(用户名 UserName:String, 密码 Password:String) -> PullDownResult //登录
 {
     let urlStr = NSString(format: "http://172.16.100.41:8080/MUser/%@", "Login")
     var UserRole:String = ""
+    var pullDownResult = PullDownResult(PtrRequest: ResultType.Error, ErrorMsg: "")
+    
 
     if let url = NSURL(string: urlStr) {
         let postRequest = NSMutableURLRequest(URL: url)
@@ -29,20 +29,21 @@ func UserLogin(用户名 UserName:String, 密码 Password:String) -> String //�
 
         postRequest.HTTPBody = jsonparam
         if let response = NSURLConnection.sendSynchronousRequest(postRequest, returningResponse: nil, error: nil) {
-            let responsestr = NSString(data: response, encoding: NSUTF8StringEncoding)
+            //let responsestr = NSString(data: response, encoding: NSUTF8StringEncoding)
             
             let json = JSON(data: response)
+            if let userResultType = json["Type"].int
+            {
+                pullDownResult.PtrRequest = ResultType(rawValue: userResultType)!
+            }
             if let userRole = json["ErrorMsg"].string
             {
-                println("***" + userRole + "\n")
-                UserRole = userRole
-                
+                pullDownResult.ErrorMsg = userRole
             }
-            
-            println(responsestr! + "\n")
+
         }
     }
-    return "身份：" + UserRole
+    return pullDownResult
 }
 
 func buttonFunc2()
@@ -61,23 +62,3 @@ func buttonFunc2()
         }
     }
 }
-
-/*
-
-//连接到服务端后触发
-func connection(connection: NSURLConnection, didReceiveResponse response: NSURLResponse) {
-    responseData = NSMutableData()
-}
-
-//接收数据中
-func connection(connection: NSURLConnection, didReceiveData data: NSData) {
-    responseData.appendData(data)
-}
-
-//数据接收完毕
-func connectionDidFinishLoading(connection: NSURLConnection) {
-    let responsejson = NSJSONSerialization.JSONObjectWithData(responseData, options: NSJSONReadingOptions.AllowFragments, error: nil)
-    let str = NSString(data: responseData, encoding: NSUTF8StringEncoding)
-    println(str)
-}
-*/

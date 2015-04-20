@@ -666,7 +666,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="UserName" destination="teV-XO-AGR" id="f1Z-Qj-LXA"/>
+                        <outlet property="UserName" destination="teV-XO-AGR" id="vRe-B8-mTA"/>
                         <outlet property="UserNameText" destination="Z9p-Eh-qCE" id="DtJ-n0-bcf"/>
                         <outlet property="UserPassword" destination="9Xd-Ks-Abn" id="KFc-sJ-Nlv"/>
                     </connections>
@@ -1099,10 +1099,10 @@
             </objects>
             <point key="canvasLocation" x="724.5" y="-754.5"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--MemberMainView-->
         <scene sceneID="qbo-P9-URC">
             <objects>
-                <tabBarController id="Wmc-o8-kcD" sceneMemberID="viewController">
+                <tabBarController title="MemberMainView" id="Wmc-o8-kcD" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="AR1-dV-cUd">
@@ -1138,10 +1138,10 @@
             </objects>
             <point key="canvasLocation" x="730.5" y="784.5"/>
         </scene>
-        <!--Main View Controller-->
+        <!--TeacherMainView-->
         <scene sceneID="1cZ-Oq-b1V">
             <objects>
-                <tabBarController id="uqG-Z1-dkh" customClass="MainViewController" customModule="XHVolunteeriOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController title="TeacherMainView" id="uqG-Z1-dkh" customClass="MainViewController" customModule="XHVolunteeriOS" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="YPJ-Sa-AeB">
@@ -1166,7 +1166,7 @@
         <image name="setting" width="19" height="19"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="t0s-jO-1ha"/>
         <segue reference="Bka-0z-g5m"/>
-        <segue reference="hJh-0k-jMb"/>
     </inferredMetricsTieBreakers>
 </document>

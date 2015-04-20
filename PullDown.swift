@@ -7,7 +7,13 @@
 //
 
 import Foundation
+/*
+class PullDownRequest: NSObject {
+    var PtrRequest:PtrRequest
+    var request:RequestType
+}
 
+*/
 class PullDownResult: NSObject {
     var PtrRequest:ResultType
     var ErrorMsg:String
@@ -17,8 +23,6 @@ class PullDownResult: NSObject {
         self.ErrorMsg = ErrorMsg
     }
 }
-
-
 
 enum ResultType:Int
 {

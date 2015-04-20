@@ -12,5 +12,5 @@ protocol IUserReposity
 {
     func GetUserInfo() -> InfoOut //获取用户信息
     func EditUser(性别 Sex:Bool, 联系方式 PhoneNumber:String, QQ号 QQNumber:String, 个人简介 PersonalInfo:String) -> EditOut //编辑用户信息
-    func UserLogin(用户名 UserName:String, 密码 NewPassword:String) -> PullDownResult //登录
+    func UserLogin(用户名 UserName:String, 密码 Password:String) -> PullDownResult //登录
 }
