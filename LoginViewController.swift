@@ -32,7 +32,6 @@ class LoginViewController: UIViewController {
         let pullDownResult:PullDownResult = UserLogin(用户名: UserName.text,密码: UserPassword.text)
         UserNameText.text = pullDownResult.ErrorMsg
         
-        
     }
 
     @IBAction func Button2(sender: UIButton) {
