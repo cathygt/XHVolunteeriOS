@@ -46,19 +46,3 @@ func UserLogin(用户名 UserName:String, 密码 Password:String) -> PullDownRes
     return pullDownResult
 }
 
-func buttonFunc2()
-{
-    let urlStr = NSString(format: "http://172.16.100.41:8080/MUser/%@", "GetUserInfo")
-    
-    if let url = NSURL(string: urlStr) {
-        let postRequest = NSMutableURLRequest(URL: url)
-        postRequest.timeoutInterval = 5.0
-        postRequest.HTTPMethod = "POST"
-        //postRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-
-        if let response = NSURLConnection.sendSynchronousRequest(postRequest, returningResponse: nil, error: nil) {
-            let responsestr = NSString(data: response, encoding: NSUTF8StringEncoding)
-            println(responsestr! + "\n")
-        }
-    }
-}

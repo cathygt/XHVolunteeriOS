@@ -13,10 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var UserName: UITextField!
     
     @IBOutlet var UserPassword: UITextField!
-    
-    @IBOutlet var UserNameText: UILabel!
-    
-    private var responseData : NSMutableData!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,12 +27,28 @@ class LoginViewController: UIViewController {
 
     @IBAction func UserLoginButton(sender: UIButton) {
         let pullDownResult:PullDownResult = UserLogin(用户名: UserName.text,密码: UserPassword.text)
-        UserNameText.text = pullDownResult.ErrorMsg
-        
-    }
 
-    @IBAction func Button2(sender: UIButton) {
-        buttonFunc2()
+        if(pullDownResult.PtrRequest == ResultType.Success)
+        {
+            if(pullDownResult.ErrorMsg == "成员")
+            {
+                self.performSegueWithIdentifier("MemberView", sender: self)
+                println("MemberView")
+            }
+            else if (pullDownResult.ErrorMsg == "负责人" || pullDownResult.ErrorMsg == "具体负责人")
+            {
+                self.performSegueWithIdentifier("TeacherView", sender: self)
+            }
+        }
+        else
+        {
+            var alert = UIAlertView()
+            alert.title = "错误"
+            alert.message = pullDownResult.ErrorMsg
+            alert.addButtonWithTitle("取消")
+            alert.show()
+        }
+
     }
 
     

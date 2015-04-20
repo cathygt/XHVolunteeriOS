@@ -296,8 +296,8 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="喜欢画画" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xL1-WS-Eo5">
-                                                    <rect key="frame" x="92" y="15" width="275" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="喜欢画画" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xL1-WS-Eo5">
+                                                    <rect key="frame" x="92" y="14" width="275" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -586,7 +586,7 @@
         <!--Login View Controller-->
         <scene sceneID="BUi-uE-QQ6">
             <objects>
-                <viewController id="s0Y-n9-ljI" customClass="LoginViewController" customModule="XHVolunteeriOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="s0Y-n9-ljI" customClass="LoginViewController" customModule="XHVolunteeriOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lgR-yg-rDg"/>
                         <viewControllerLayoutGuide type="bottom" id="nfN-km-5uz"/>
@@ -618,8 +618,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uj7-La-7sE">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Xd-Ks-Abn">
+                                <rect key="frame" x="115" y="245" width="213" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uj7-La-7sE">
                                 <rect key="frame" x="164" y="59" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Gma-A4-7G2"/>
+                                </constraints>
                                 <state key="normal" title="登录">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -627,27 +635,6 @@
                                     <action selector="UserLoginButton:" destination="s0Y-n9-ljI" eventType="touchUpInside" id="MJe-UW-Wmv"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Xd-Ks-Abn">
-                                <rect key="frame" x="115" y="245" width="213" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mny-4b-k6B">
-                                <rect key="frame" x="134" y="133" width="76" height="30"/>
-                                <state key="normal" title="个人资料">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="Button2:" destination="s0Y-n9-ljI" eventType="touchUpInside" id="ggV-kK-Zkt"/>
-                                    <action selector="UserLoginButton:" destination="s0Y-n9-ljI" eventType="touchUpInside" id="qjs-DM-aSb"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="身份" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9p-Eh-qCE">
-                                <rect key="frame" x="126" y="171" width="168" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -660,6 +647,7 @@
                             <constraint firstItem="qQI-Ef-CwE" firstAttribute="leading" secondItem="YYL-9z-5eJ" secondAttribute="leadingMargin" constant="31" id="coP-p3-lEU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="teV-XO-AGR" secondAttribute="trailing" constant="31" id="kH8-Fn-eVb"/>
                             <constraint firstItem="qQI-Ef-CwE" firstAttribute="top" secondItem="lgR-yg-rDg" secondAttribute="bottom" constant="230" id="rBP-Yq-09x"/>
+                            <constraint firstItem="Uj7-La-7sE" firstAttribute="centerX" secondItem="YYL-9z-5eJ" secondAttribute="centerX" id="wcu-tP-rUM"/>
                             <constraint firstItem="teV-XO-AGR" firstAttribute="top" secondItem="lgR-yg-rDg" secondAttribute="bottom" constant="187" id="yy2-uf-Ekr"/>
                             <constraint firstItem="LaR-A2-ngV" firstAttribute="top" secondItem="lgR-yg-rDg" secondAttribute="bottom" constant="191" id="zlo-Pr-uQB"/>
                         </constraints>
@@ -667,13 +655,14 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="UserName" destination="teV-XO-AGR" id="vRe-B8-mTA"/>
-                        <outlet property="UserNameText" destination="Z9p-Eh-qCE" id="DtJ-n0-bcf"/>
                         <outlet property="UserPassword" destination="9Xd-Ks-Abn" id="KFc-sJ-Nlv"/>
+                        <segue destination="uqG-Z1-dkh" kind="modal" identifier="MemberView" modalPresentationStyle="fullScreen" id="Pzi-m1-eVP"/>
+                        <segue destination="Wmc-o8-kcD" kind="modal" identifier="TeacherView" modalPresentationStyle="fullScreen" id="vH6-13-7zB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CoR-1U-dma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-480.5" y="46.5"/>
+            <point key="canvasLocation" x="-538.5" y="46.5"/>
         </scene>
         <!--设置-->
         <scene sceneID="5Kn-Sv-Cr2">
@@ -1099,10 +1088,10 @@
             </objects>
             <point key="canvasLocation" x="724.5" y="-754.5"/>
         </scene>
-        <!--MemberMainView-->
+        <!--TeacherMainView-->
         <scene sceneID="qbo-P9-URC">
             <objects>
-                <tabBarController title="MemberMainView" id="Wmc-o8-kcD" sceneMemberID="viewController">
+                <tabBarController title="TeacherMainView" id="Wmc-o8-kcD" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="AR1-dV-cUd">
@@ -1138,10 +1127,10 @@
             </objects>
             <point key="canvasLocation" x="730.5" y="784.5"/>
         </scene>
-        <!--TeacherMainView-->
+        <!--MemberMainView-->
         <scene sceneID="1cZ-Oq-b1V">
             <objects>
-                <tabBarController title="TeacherMainView" id="uqG-Z1-dkh" customClass="MainViewController" customModule="XHVolunteeriOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController title="MemberMainView" id="uqG-Z1-dkh" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="YPJ-Sa-AeB">

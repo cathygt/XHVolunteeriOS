@@ -45,6 +45,7 @@ class SettingTableViewController: UITableViewController {
     {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

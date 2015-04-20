@@ -16,7 +16,6 @@
 		7884EB8E1ADBA02500CC97F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7884EB8C1ADBA02500CC97F0 /* LaunchScreen.xib */; };
 		7884EB9A1ADBA02500CC97F0 /* XHVolunteeriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7884EB991ADBA02500CC97F0 /* XHVolunteeriOSTests.swift */; };
 		7884EBA51ADBC54D00CC97F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7884EBA31ADBC54D00CC97F0 /* Main.storyboard */; };
-		78CC759F1ADD13A800CFC2CB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC759E1ADD13A800CFC2CB /* MainViewController.swift */; };
 		78CC75A21ADE10A200CFC2CB /* IActivityReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC75A11ADE10A200CFC2CB /* IActivityReposity.swift */; };
 		78CC75A41ADE4FA800CFC2CB /* IUserReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC75A31ADE4FA800CFC2CB /* IUserReposity.swift */; };
 		78CC75A61ADE552500CFC2CB /* EditUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC75A51ADE552500CFC2CB /* EditUserInfo.swift */; };
@@ -58,7 +57,6 @@
 		7884EB981ADBA02500CC97F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7884EB991ADBA02500CC97F0 /* XHVolunteeriOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XHVolunteeriOSTests.swift; sourceTree = "<group>"; };
 		7884EBA41ADBC54D00CC97F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		78CC759E1ADD13A800CFC2CB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		78CC75A11ADE10A200CFC2CB /* IActivityReposity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IActivityReposity.swift; sourceTree = "<group>"; };
 		78CC75A31ADE4FA800CFC2CB /* IUserReposity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IUserReposity.swift; sourceTree = "<group>"; };
 		78CC75A51ADE552500CFC2CB /* EditUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditUserInfo.swift; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				78DEC84F1ADCBA9300AC1846 /* RecruitActivityTableViewController.swift */,
-				78CC759E1ADD13A800CFC2CB /* MainViewController.swift */,
 				78DEC8511ADCBB5100AC1846 /* QRcodeViewController.swift */,
 				78DEC8551ADCBF8F00AC1846 /* MyActivityTableViewController.swift */,
 				78DEC8531ADCBC7C00AC1846 /* SettingTableViewController.swift */,
@@ -326,7 +323,6 @@
 				78CC75A61ADE552500CFC2CB /* EditUserInfo.swift in Sources */,
 				78CC75A41ADE4FA800CFC2CB /* IUserReposity.swift in Sources */,
 				78CC75A21ADE10A200CFC2CB /* IActivityReposity.swift in Sources */,
-				78CC759F1ADD13A800CFC2CB /* MainViewController.swift in Sources */,
 				78F0E95F1AE1108300562E8D /* ActivityReposity.swift in Sources */,
 				78CC75AC1ADE640A00CFC2CB /* PullDown.swift in Sources */,
 				78CC75A81ADE563500CFC2CB /* GetUserInfo.swift in Sources */,
