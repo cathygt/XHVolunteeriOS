@@ -41,11 +41,7 @@ class SettingTableViewController: UITableViewController {
     }
     */
 
-    @IBAction func CancelViewController(segue:UIStoryboardSegue)
-    {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
-    
+
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

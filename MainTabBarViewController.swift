@@ -1,29 +1,28 @@
 //
-//  QRcodeViewController.swift
+//  MainTabBarViewController.swift
 //  XHVolunteeriOS
 //
-//  Created by silverwei on 15-4-14.
+//  Created by silverwei on 15-4-20.
 //  Copyright (c) 2015年 NineSoft. All rights reserved.
 //
 
 import UIKit
 
-class QRcodeViewController: UIViewController {
+class MainTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
 
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func CloseViewButton(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
 
     /*
     // MARK: - Navigation

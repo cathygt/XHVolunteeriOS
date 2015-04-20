@@ -33,7 +33,6 @@ class LoginViewController: UIViewController {
             if(pullDownResult.ErrorMsg == "成员")
             {
                 self.performSegueWithIdentifier("MemberView", sender: self)
-                println("MemberView")
             }
             else if (pullDownResult.ErrorMsg == "负责人" || pullDownResult.ErrorMsg == "具体负责人")
             {

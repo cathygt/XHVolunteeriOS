@@ -43,7 +43,7 @@ class MyActivityTableViewController: UITableViewController {
 
     @IBAction func CancelViewController(segue:UIStoryboardSegue)
     {
-        dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     /*

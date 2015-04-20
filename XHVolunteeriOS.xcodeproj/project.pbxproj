@@ -10,6 +10,7 @@
 		782195951AE2462E0018AC26 /* UserReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782195941AE2462E0018AC26 /* UserReposity.swift */; };
 		782195971AE2463A0018AC26 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782195961AE2463A0018AC26 /* LoginViewController.swift */; };
 		782195E51AE24AC80018AC26 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782195E41AE24AC80018AC26 /* SwiftyJSON.swift */; };
+		78433E0D1AE4E86100D2E72F /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78433E0C1AE4E86100D2E72F /* MainTabBarViewController.swift */; };
 		7884EB841ADBA02500CC97F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7884EB831ADBA02500CC97F0 /* AppDelegate.swift */; };
 		7884EB861ADBA02500CC97F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7884EB851ADBA02500CC97F0 /* ViewController.swift */; };
 		7884EB8B1ADBA02500CC97F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7884EB8A1ADBA02500CC97F0 /* Images.xcassets */; };
@@ -47,6 +48,7 @@
 		782195941AE2462E0018AC26 /* UserReposity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserReposity.swift; sourceTree = "<group>"; };
 		782195961AE2463A0018AC26 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		782195E41AE24AC80018AC26 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
+		78433E0C1AE4E86100D2E72F /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		7884EB7E1ADBA02500CC97F0 /* XHVolunteeriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XHVolunteeriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7884EB821ADBA02500CC97F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7884EB831ADBA02500CC97F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				78DEC85A1ADCEEB200AC1846 /* ActivityDetailTableViewController.swift */,
 				78DEC85C1ADCEF4A00AC1846 /* SettingEditTableViewController.swift */,
 				782195961AE2463A0018AC26 /* LoginViewController.swift */,
+				78433E0C1AE4E86100D2E72F /* MainTabBarViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				78CC75AE1ADE6A6500CFC2CB /* ScanCode.swift in Sources */,
 				78DEC8501ADCBA9300AC1846 /* RecruitActivityTableViewController.swift in Sources */,
 				7884EB861ADBA02500CC97F0 /* ViewController.swift in Sources */,
+				78433E0D1AE4E86100D2E72F /* MainTabBarViewController.swift in Sources */,
 				78DEC85D1ADCEF4A00AC1846 /* SettingEditTableViewController.swift in Sources */,
 				78DEC8561ADCBF8F00AC1846 /* MyActivityTableViewController.swift in Sources */,
 				78DEC8521ADCBB5100AC1846 /* QRcodeViewController.swift in Sources */,
