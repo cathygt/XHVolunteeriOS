@@ -24,6 +24,15 @@ class ActivityDetailTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func ActivityMenu(sender: UIButton) {
+        var actionSheet = UIActionSheet()
+        actionSheet.addButtonWithTitle("取消")
+        actionSheet.addButtonWithTitle("生成二维码")
+        actionSheet.addButtonWithTitle("结束活动")
+        actionSheet.cancelButtonIndex = 0
+        actionSheet.showInView(self.view)
+    }
 
     // MARK: - Table view data source
 
