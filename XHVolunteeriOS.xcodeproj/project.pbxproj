@@ -24,6 +24,11 @@
 		78CC75AA1ADE5B3100CFC2CB /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC75A91ADE5B3100CFC2CB /* Login.swift */; };
 		78CC75AC1ADE640A00CFC2CB /* PullDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC75AB1ADE640A00CFC2CB /* PullDown.swift */; };
 		78CC75AE1ADE6A6500CFC2CB /* ScanCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC75AD1ADE6A6500CFC2CB /* ScanCode.swift */; };
+		78D8BAB41AE742D600CBBA9A /* PtrRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D8BAB31AE742D600CBBA9A /* PtrRequest.swift */; };
+		78D8BAB61AE75EC300CBBA9A /* PtrResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D8BAB51AE75EC300CBBA9A /* PtrResponse.swift */; };
+		78D8BAB81AE75F8B00CBBA9A /* UpdateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D8BAB71AE75F8B00CBBA9A /* UpdateType.swift */; };
+		78D8BABA1AE7604900CBBA9A /* PtrUpdateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D8BAB91AE7604900CBBA9A /* PtrUpdateData.swift */; };
+		78D8BABC1AE779AF00CBBA9A /* ActivityDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D8BABB1AE779AF00CBBA9A /* ActivityDB.swift */; };
 		78DEC8501ADCBA9300AC1846 /* RecruitActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DEC84F1ADCBA9300AC1846 /* RecruitActivityTableViewController.swift */; };
 		78DEC8521ADCBB5100AC1846 /* QRcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DEC8511ADCBB5100AC1846 /* QRcodeViewController.swift */; };
 		78DEC8541ADCBC7C00AC1846 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DEC8531ADCBC7C00AC1846 /* SettingTableViewController.swift */; };
@@ -66,6 +71,11 @@
 		78CC75A91ADE5B3100CFC2CB /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		78CC75AB1ADE640A00CFC2CB /* PullDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullDown.swift; sourceTree = "<group>"; };
 		78CC75AD1ADE6A6500CFC2CB /* ScanCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanCode.swift; sourceTree = "<group>"; };
+		78D8BAB31AE742D600CBBA9A /* PtrRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PtrRequest.swift; sourceTree = "<group>"; };
+		78D8BAB51AE75EC300CBBA9A /* PtrResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PtrResponse.swift; sourceTree = "<group>"; };
+		78D8BAB71AE75F8B00CBBA9A /* UpdateType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateType.swift; sourceTree = "<group>"; };
+		78D8BAB91AE7604900CBBA9A /* PtrUpdateData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PtrUpdateData.swift; sourceTree = "<group>"; };
+		78D8BABB1AE779AF00CBBA9A /* ActivityDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDB.swift; sourceTree = "<group>"; };
 		78DEC84F1ADCBA9300AC1846 /* RecruitActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecruitActivityTableViewController.swift; path = XHVolunteeriOS/RecruitActivityTableViewController.swift; sourceTree = "<group>"; };
 		78DEC8511ADCBB5100AC1846 /* QRcodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRcodeViewController.swift; path = XHVolunteeriOS/QRcodeViewController.swift; sourceTree = "<group>"; };
 		78DEC8531ADCBC7C00AC1846 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingTableViewController.swift; path = XHVolunteeriOS/SettingTableViewController.swift; sourceTree = "<group>"; };
@@ -184,11 +194,16 @@
 			isa = PBXGroup;
 			children = (
 				78DEC85E1ADD0BBD00AC1846 /* ActivityInfo.swift */,
+				78D8BABB1AE779AF00CBBA9A /* ActivityDB.swift */,
 				78CC75A51ADE552500CFC2CB /* EditUserInfo.swift */,
 				78CC75A71ADE563500CFC2CB /* GetUserInfo.swift */,
 				78CC75A91ADE5B3100CFC2CB /* Login.swift */,
 				78CC75AB1ADE640A00CFC2CB /* PullDown.swift */,
+				78D8BAB31AE742D600CBBA9A /* PtrRequest.swift */,
+				78D8BAB51AE75EC300CBBA9A /* PtrResponse.swift */,
 				78CC75AD1ADE6A6500CFC2CB /* ScanCode.swift */,
+				78D8BAB71AE75F8B00CBBA9A /* UpdateType.swift */,
+				78D8BAB91AE7604900CBBA9A /* PtrUpdateData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -313,12 +328,16 @@
 				78DEC8501ADCBA9300AC1846 /* RecruitActivityTableViewController.swift in Sources */,
 				7884EB861ADBA02500CC97F0 /* ViewController.swift in Sources */,
 				78433E0D1AE4E86100D2E72F /* MainTabBarViewController.swift in Sources */,
+				78D8BAB41AE742D600CBBA9A /* PtrRequest.swift in Sources */,
 				78DEC85D1ADCEF4A00AC1846 /* SettingEditTableViewController.swift in Sources */,
 				78DEC8561ADCBF8F00AC1846 /* MyActivityTableViewController.swift in Sources */,
 				78DEC8521ADCBB5100AC1846 /* QRcodeViewController.swift in Sources */,
+				78D8BAB81AE75F8B00CBBA9A /* UpdateType.swift in Sources */,
 				782195951AE2462E0018AC26 /* UserReposity.swift in Sources */,
 				78DEC85B1ADCEEB200AC1846 /* ActivityDetailTableViewController.swift in Sources */,
 				782195971AE2463A0018AC26 /* LoginViewController.swift in Sources */,
+				78D8BABC1AE779AF00CBBA9A /* ActivityDB.swift in Sources */,
+				78D8BAB61AE75EC300CBBA9A /* PtrResponse.swift in Sources */,
 				78CC75AA1ADE5B3100CFC2CB /* Login.swift in Sources */,
 				78DEC85F1ADD0BBD00AC1846 /* ActivityInfo.swift in Sources */,
 				7884EB841ADBA02500CC97F0 /* AppDelegate.swift in Sources */,
@@ -328,6 +347,7 @@
 				78CC75A41ADE4FA800CFC2CB /* IUserReposity.swift in Sources */,
 				78CC75A21ADE10A200CFC2CB /* IActivityReposity.swift in Sources */,
 				78F0E95F1AE1108300562E8D /* ActivityReposity.swift in Sources */,
+				78D8BABA1AE7604900CBBA9A /* PtrUpdateData.swift in Sources */,
 				78CC75AC1ADE640A00CFC2CB /* PullDown.swift in Sources */,
 				78CC75A81ADE563500CFC2CB /* GetUserInfo.swift in Sources */,
 			);

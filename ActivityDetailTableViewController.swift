@@ -25,6 +25,8 @@ class ActivityDetailTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    //右上角弹出菜单内容
     @IBAction func ActivityMenu(sender: UIButton) {
         var actionSheet = UIActionSheet()
         actionSheet.addButtonWithTitle("取消")

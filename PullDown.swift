@@ -7,13 +7,18 @@
 //
 
 import Foundation
-/*
+
 class PullDownRequest: NSObject {
-    var PtrRequest:PtrRequest
+    var ptrRequest:PtrRequest
     var request:RequestType
+    
+    init(ptrRequest:PtrRequest, request:RequestType) {
+        self.ptrRequest = ptrRequest
+        self.request = request
+    }
 }
 
-*/
+
 class PullDownResult: NSObject {
     var PtrRequest:ResultType
     var ErrorMsg:String
@@ -38,3 +43,5 @@ enum RequestType:Int
     case Leave = 3
     case All = 4
 }
+
+

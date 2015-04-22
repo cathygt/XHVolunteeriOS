@@ -28,6 +28,7 @@ class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,
         //上拉加载
         self.createTableFooter()
 
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -108,9 +109,14 @@ class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,
             
             self.refreshControl?.attributedTitle = NSAttributedString(string: "正在刷新活动...")
         }
-        println("下拉刷新")
+        
 
+        GetActivitiesData()
+        
         tableView.reloadData()
+        
+        println("下拉刷新")
+        
         refreshControl?.endRefreshing()
         if self.refreshControl?.refreshing == false
         {
