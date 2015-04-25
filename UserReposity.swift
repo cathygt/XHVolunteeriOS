@@ -29,7 +29,8 @@ func UserLogin(用户名 UserName:String, 密码 Password:String) -> PullDownRes
 
         postRequest.HTTPBody = jsonparam
         if let response = NSURLConnection.sendSynchronousRequest(postRequest, returningResponse: nil, error: nil) {
-            //let responsestr = NSString(data: response, encoding: NSUTF8StringEncoding)
+            let responsestr = NSString(data: response, encoding: NSUTF8StringEncoding)
+            println(responsestr)
             
             let json = JSON(data: response)
             if let userResultType = json["Type"].int

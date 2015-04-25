@@ -8,11 +8,11 @@
 
 import Foundation
 
-class PtrResponse<T> : NSObject {
-    var updatedata:PtrUpdaeData<T>
+class PtrResponse : NSObject {
+    var updatedata = [PtrUpdaeData]()
     var TotalCount:Int
     var Guid:String
-    init(updatedata:PtrUpdaeData<T>,TotalCount:Int,Guid:String)
+    init(updatedata:[PtrUpdaeData],TotalCount:Int,Guid:String)
     {
         self.updatedata = updatedata
         self.TotalCount = TotalCount

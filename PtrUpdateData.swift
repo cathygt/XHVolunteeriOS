@@ -7,11 +7,11 @@
 //
 
 import Foundation
-class PtrUpdaeData<T>: NSObject {
+class PtrUpdaeData: NSObject {
     var Type:UpdateType
-    var Data:[T]
+    var Data:ActivityDB
     
-    init(Type:UpdateType ,Data:[T]){
+    init(Type:UpdateType ,Data:ActivityDB){
         self.Type = Type
         self.Data = Data
     }

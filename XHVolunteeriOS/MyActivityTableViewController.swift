@@ -110,13 +110,18 @@ class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,
             self.refreshControl?.attributedTitle = NSAttributedString(string: "正在刷新活动...")
         }
         
-
-        GetActivitiesData()
-        
-        tableView.reloadData()
+      /*  GetActivitiesData()*/
+        var ActivityAll:PtrResponse = GetActivitiesData()
+        for i in 0..<ActivityAll.updatedata.count
+        {
+            var Activity = ActivityAll.updatedata[i] as PtrUpdaeData!
+            println(Activity.Data.ActivityName)
+            println(Activity.Data.ActivityStartTime)
+        }
         
         println("下拉刷新")
-        
+        tableView.reloadData()
+
         refreshControl?.endRefreshing()
         if self.refreshControl?.refreshing == false
         {
