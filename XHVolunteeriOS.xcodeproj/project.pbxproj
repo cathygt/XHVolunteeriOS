@@ -37,6 +37,8 @@
 		78DEC85D1ADCEF4A00AC1846 /* SettingEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DEC85C1ADCEF4A00AC1846 /* SettingEditTableViewController.swift */; };
 		78DEC85F1ADD0BBD00AC1846 /* ActivityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DEC85E1ADD0BBD00AC1846 /* ActivityInfo.swift */; };
 		78F0E95F1AE1108300562E8D /* ActivityReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F0E95E1AE1108300562E8D /* ActivityReposity.swift */; };
+		78F663DB1AEDCA09004B12C1 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F663DA1AEDCA09004B12C1 /* ActivityCell.swift */; };
+		78F663DD1AEE2021004B12C1 /* ActivityDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F663DC1AEE2021004B12C1 /* ActivityDetailCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		78DEC85C1ADCEF4A00AC1846 /* SettingEditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingEditTableViewController.swift; sourceTree = "<group>"; };
 		78DEC85E1ADD0BBD00AC1846 /* ActivityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityInfo.swift; sourceTree = "<group>"; };
 		78F0E95E1AE1108300562E8D /* ActivityReposity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityReposity.swift; sourceTree = "<group>"; };
+		78F663DA1AEDCA09004B12C1 /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		78F663DC1AEE2021004B12C1 /* ActivityDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 				7884EBA31ADBC54D00CC97F0 /* Main.storyboard */,
 				7884EB8C1ADBA02500CC97F0 /* LaunchScreen.xib */,
 				7884EB811ADBA02500CC97F0 /* Supporting Files */,
+				78F663DA1AEDCA09004B12C1 /* ActivityCell.swift */,
+				78F663DC1AEE2021004B12C1 /* ActivityDetailCell.swift */,
 			);
 			path = XHVolunteeriOS;
 			sourceTree = "<group>";
@@ -337,11 +343,13 @@
 				78DEC85B1ADCEEB200AC1846 /* ActivityDetailTableViewController.swift in Sources */,
 				782195971AE2463A0018AC26 /* LoginViewController.swift in Sources */,
 				78D8BABC1AE779AF00CBBA9A /* ActivityDB.swift in Sources */,
+				78F663DB1AEDCA09004B12C1 /* ActivityCell.swift in Sources */,
 				78D8BAB61AE75EC300CBBA9A /* PtrResponse.swift in Sources */,
 				78CC75AA1ADE5B3100CFC2CB /* Login.swift in Sources */,
 				78DEC85F1ADD0BBD00AC1846 /* ActivityInfo.swift in Sources */,
 				7884EB841ADBA02500CC97F0 /* AppDelegate.swift in Sources */,
 				782195E51AE24AC80018AC26 /* SwiftyJSON.swift in Sources */,
+				78F663DD1AEE2021004B12C1 /* ActivityDetailCell.swift in Sources */,
 				78DEC8541ADCBC7C00AC1846 /* SettingTableViewController.swift in Sources */,
 				78CC75A61ADE552500CFC2CB /* EditUserInfo.swift in Sources */,
 				78CC75A41ADE4FA800CFC2CB /* IUserReposity.swift in Sources */,

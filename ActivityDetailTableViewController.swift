@@ -10,9 +10,15 @@ import UIKit
 
 class ActivityDetailTableViewController: UITableViewController {
 
+    var ActivityDetail:ActivityDB!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        println(ActivityDetail.ActivityName)
+        
+        ActivityDetailShow()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -25,6 +31,24 @@ class ActivityDetailTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //读取活动详细信息
+    func ActivityDetailShow()
+    {
+        let cell = tableView.self as ActivityDetailCell
+        cell.ActivityNameLabel.text = ActivityDetail.ActivityName
+        cell.ActivityLocationLabel.text = ActivityDetail.ActivityLocation
+        cell.JoinCountLabel.text = ActivityDetail.ActivityAttend.description + "/" + ActivityDetail.JoinCount.description
+        cell.ActivityStartTimeLabel.text = DateTimeChange(ActivityDetail.ActivityStartTime)
+        cell.ActivityEndTimeLabel.text = DateTimeChange(ActivityDetail.ActivityEndTime)
+        cell.ActivitySummaryLabel.text = ActivityDetail.ActivitySummary
+        cell.TeamNameLabel.text = ActivityDetail.TeamName
+    }
+    
+    //日期格式转化
+    func DateTimeChange(DateTime: String) -> String
+    {
+        return (DateTime as NSString).substringToIndex(10) + " " + ((DateTime as NSString).substringFromIndex(11) as NSString).substringToIndex(5)
+    }
     
     //右上角弹出菜单内容
     @IBAction func ActivityMenu(sender: UIButton) {

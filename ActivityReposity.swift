@@ -9,11 +9,11 @@
 import Foundation
 let BaseUrl = "172.16.100.41:8080/MActivity"
 
-func GetActivitiesData(/* postData:PullDownRequest*/) -> PtrResponse
+func GetActivitiesData(postData :PullDownRequest) -> PtrResponse
 {
     let urlStr = NSString(format: "http://%@/%@", BaseUrl , "GetActivitiesByPage") //GetActivitiesByPage是web端接口
     var UserRole:String = ""
-    var param = PullDownRequest(ptrRequest: PtrRequest(Skip: 0, Count: 10, LocalData: PtrUpdateParam(Id: nil, IndexId: nil, Tick: nil), Guid: ""), request: RequestType.Finish) //请求的数据模型
+    var param = PullDownRequest(ptrRequest: PtrRequest(Skip: 0, Count: 10, LocalData: PtrUpdateParam(Id: nil, IndexId: nil, Tick: nil), Guid: ""), request: postData.request) //请求的数据模型
     var Response:PtrResponse? //返回值的定义
     
     if let url = NSURL(string: urlStr) {

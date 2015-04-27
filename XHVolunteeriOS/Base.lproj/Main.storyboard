@@ -177,7 +177,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyActivityCell" rowHeight="72" id="4Yy-TL-52A">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyActivityCell" rowHeight="72" id="4Yy-TL-52A" customClass="ActivityCell" customModule="XHVolunteeriOS" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Yy-TL-52A" id="ZFM-h6-Lb8">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -195,7 +195,7 @@
                                                 <constraint firstAttribute="height" constant="21" id="zha-C4-fiD"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始时间: 2015-4-10 13:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVg-FR-Bne">
@@ -205,7 +205,7 @@
                                                 <constraint firstAttribute="width" constant="174" id="q8b-W5-WdM"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -220,7 +220,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="la3-LI-qzZ" kind="show" id="Bka-0z-g5m"/>
+                                    <outlet property="ActivityEndTimeLabel" destination="5Ww-Wk-xb8" id="bRS-Xo-cRG"/>
+                                    <outlet property="ActivityNameLabel" destination="Fw5-PW-U9w" id="NaX-y3-5A5"/>
+                                    <outlet property="ActivityStartTimeLabel" destination="ZVg-FR-Bne" id="BNL-Ze-22S"/>
+                                    <segue destination="XzU-dS-VTa" kind="show" identifier="ShowActivity" id="afz-8a-EOW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1061,7 +1064,7 @@
                         <sections>
                             <tableViewSection id="mOd-O0-uHJ">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="64" id="7H1-2A-rT9">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="64" id="7H1-2A-rT9" customClass="ActivityCell" customModule="XHVolunteeriOS" customModuleProvider="target">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7H1-2A-rT9" id="5Y0-SO-vH2">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -1078,7 +1081,7 @@
                                                         <constraint firstAttribute="width" constant="154" id="49m-kp-ITP"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1091,7 +1094,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="la3-LI-qzZ" kind="show" id="34J-a9-dmj"/>
+                                            <segue destination="XzU-dS-VTa" kind="show" identifier="RecruitActivityShow" id="UEa-ga-Mu4"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -1152,7 +1155,7 @@
         <scene sceneID="m3N-Kj-PNP">
             <objects>
                 <tableViewController id="XzU-dS-VTa" customClass="ActivityDetailTableViewController" customModule="XHVolunteeriOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="t9J-QQ-YT2">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="t9J-QQ-YT2" customClass="ActivityDetailCell" customModule="XHVolunteeriOS" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
@@ -1359,6 +1362,14 @@
                             </tableViewSection>
                         </sections>
                         <connections>
+                            <outlet property="ActivityEndTimeLabel" destination="vMw-9z-zw5" id="VEV-3e-uwR"/>
+                            <outlet property="ActivityLocationLabel" destination="gBH-3B-p3j" id="Dxo-fW-6Gv"/>
+                            <outlet property="ActivityNameLabel" destination="65k-cp-jrr" id="CGN-C5-Vit"/>
+                            <outlet property="ActivityStartTimeLabel" destination="1gh-hz-bqU" id="23g-xz-qvv"/>
+                            <outlet property="ActivitySummaryLabel" destination="owU-ys-a93" id="8XN-rd-13Y"/>
+                            <outlet property="JoinCountLabel" destination="7H1-7h-8FZ" id="WIT-CX-veS"/>
+                            <outlet property="TeamNameLabel" destination="Euq-LN-f9D" id="be8-es-ELu"/>
+                            <outlet property="UserNameLabel" destination="ue8-qk-KdZ" id="nvL-jr-Cyt"/>
                             <outlet property="dataSource" destination="XzU-dS-VTa" id="gET-8M-3Hv"/>
                             <outlet property="delegate" destination="XzU-dS-VTa" id="AHe-Vk-F9e"/>
                         </connections>
@@ -1382,25 +1393,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gnm-v2-T04" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2281.5" y="1135.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Wum-av-kHm">
-            <objects>
-                <navigationController id="la3-LI-qzZ" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="u3Q-57-aU2"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hys-UU-ISH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="XzU-dS-VTa" kind="relationship" relationship="rootViewController" id="6x7-Kj-CvK"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kZW-cr-dUB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1796.5" y="1139.5"/>
+            <point key="canvasLocation" x="1851.5" y="1147.5"/>
         </scene>
         <!--所有活动-->
         <scene sceneID="ogr-w8-e6W">
@@ -1413,7 +1406,7 @@
                         <sections>
                             <tableViewSection id="exl-x9-gBw">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="76" id="wpG-ue-nmo">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="76" id="wpG-ue-nmo" customClass="ActivityCell" customModule="XHVolunteeriOS" customModuleProvider="target">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wpG-ue-nmo" id="LSF-IP-LEB">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -1456,60 +1449,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="la3-LI-qzZ" kind="show" id="XLc-4T-gxs"/>
+                                            <segue destination="XzU-dS-VTa" kind="show" id="15S-Gw-Bo6"/>
                                         </connections>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="64" id="pY3-Vs-u6V">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pY3-Vs-u6V" id="BCo-p1-QjD">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="敬老院慰问" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glg-XJ-3zR">
-                                                    <rect key="frame" x="8" y="0.0" width="196" height="36"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="开始时间:2015-4-10 13:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1e-pi-CkI">
-                                                    <rect key="frame" x="8" y="35" width="166" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="结束时间:2015-4-10 13:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1p-wE-kiR">
-                                                    <rect key="frame" x="176" y="35" width="166" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="64" id="NCu-gs-I1C">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NCu-gs-I1C" id="cft-tq-KsB">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="敬老院慰问" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7U-Bf-3I0">
-                                                    <rect key="frame" x="8" y="0.0" width="196" height="36"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="开始时间:2015-4-10 13:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gk-5i-EBC">
-                                                    <rect key="frame" x="8" y="35" width="166" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="结束时间:2015-4-10 13:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVK-Jk-YoG">
-                                                    <rect key="frame" x="176" y="35" width="166" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1523,7 +1464,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7Z-Io-2Gu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1176.5" y="-284.5"/>
+            <point key="canvasLocation" x="1184.5" y="-284.5"/>
         </scene>
         <!--所有活动-->
         <scene sceneID="eBQ-Wo-Esn">
@@ -1653,6 +1594,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="WZc-eS-g75"/>
-        <segue reference="XLc-4T-gxs"/>
+        <segue reference="UEa-ga-Mu4"/>
     </inferredMetricsTieBreakers>
 </document>
