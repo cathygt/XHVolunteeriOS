@@ -86,8 +86,8 @@
 		78DEC85C1ADCEF4A00AC1846 /* SettingEditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingEditTableViewController.swift; sourceTree = "<group>"; };
 		78DEC85E1ADD0BBD00AC1846 /* ActivityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityInfo.swift; sourceTree = "<group>"; };
 		78F0E95E1AE1108300562E8D /* ActivityReposity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityReposity.swift; sourceTree = "<group>"; };
-		78F663DA1AEDCA09004B12C1 /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
-		78F663DC1AEE2021004B12C1 /* ActivityDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailCell.swift; sourceTree = "<group>"; };
+		78F663DA1AEDCA09004B12C1 /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityCell.swift; path = XHVolunteeriOS/ActivityCell.swift; sourceTree = "<group>"; };
+		78F663DC1AEE2021004B12C1 /* ActivityDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityDetailCell.swift; path = XHVolunteeriOS/ActivityDetailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +141,6 @@
 				7884EBA31ADBC54D00CC97F0 /* Main.storyboard */,
 				7884EB8C1ADBA02500CC97F0 /* LaunchScreen.xib */,
 				7884EB811ADBA02500CC97F0 /* Supporting Files */,
-				78F663DA1AEDCA09004B12C1 /* ActivityCell.swift */,
-				78F663DC1AEE2021004B12C1 /* ActivityDetailCell.swift */,
 			);
 			path = XHVolunteeriOS;
 			sourceTree = "<group>";
@@ -217,6 +215,8 @@
 		78DEC8591ADCEDE600AC1846 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				78F663DA1AEDCA09004B12C1 /* ActivityCell.swift */,
+				78F663DC1AEE2021004B12C1 /* ActivityDetailCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";

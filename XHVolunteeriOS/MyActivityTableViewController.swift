@@ -165,7 +165,7 @@ class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,
     
     //页面对外接口
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "ShowActivity"
+        if segue.identifier == "ShowActivity" //进入数据详情页面 ShowActivity为storyboard的ldentifier标示
         {
             println("显示详情")
             
