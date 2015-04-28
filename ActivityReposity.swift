@@ -55,3 +55,121 @@ func GetActivitiesData(postData :PullDownRequest) -> PtrResponse
     }
     return Response!
 }
+
+func AddApply(ActivityID:Int) -> PullDownResult //参加报名
+{
+    let urlStr = NSString(format: "http://%@/%@", BaseUrlMUser , "JoinActivity")
+    var UserRole:String = ""
+    var Result:PullDownResult?
+    
+    if let url = NSURL(string: urlStr) {
+        let postRequest = NSMutableURLRequest(URL: url)
+        postRequest.timeoutInterval = 5.0
+        postRequest.HTTPMethod = "POST"
+        //postRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let param = [
+            "ActivityID":ActivityID
+        ]
+        let jsonparam = NSJSONSerialization.dataWithJSONObject(param, options: NSJSONWritingOptions.PrettyPrinted, error: nil)
+        
+        postRequest.HTTPBody = jsonparam
+        
+        if let response = NSURLConnection.sendSynchronousRequest(postRequest, returningResponse: nil, error: nil) {
+            let responsestr = NSString(data: response, encoding: NSUTF8StringEncoding)
+            println(responsestr)
+            
+            var json = JSON(data: response)
+            Result = PullDownResult(PtrRequest: nil, ErrorMsg: json["ErrorMsg"].string!)
+        }
+    }
+    return Result!
+}
+func ScanCode(ActivityID:Int) -> ScanCodeRequest //首次刷二维码
+{
+    let urlStr = NSString(format: "http://%@/%@", BaseUrlMUser , "ScanCode")
+    var UserRole:String = ""
+    var Result:ScanCodeRequest?
+    
+    if let url = NSURL(string: urlStr) {
+        let postRequest = NSMutableURLRequest(URL: url)
+        postRequest.timeoutInterval = 5.0
+        postRequest.HTTPMethod = "POST"
+        //postRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let param = [
+            "ScanRequest":ActivityID
+        ]
+        let jsonparam = NSJSONSerialization.dataWithJSONObject(param, options: NSJSONWritingOptions.PrettyPrinted, error: nil)
+        
+        postRequest.HTTPBody = jsonparam
+        
+        if let response = NSURLConnection.sendSynchronousRequest(postRequest, returningResponse: nil, error: nil) {
+            let responsestr = NSString(data: response, encoding: NSUTF8StringEncoding)
+            println(responsestr)
+            
+            var json = JSON(data: response)
+            Result = ScanCodeRequest(ScanRequest: json["ScanRequest"].string!)
+        }
+    }
+    return Result!
+}
+func TwoScanCode(ActivityID:Int) -> ScanCodeRequest //第二次刷二维码
+{
+    let urlStr = NSString(format: "http://%@/%@", BaseUrlMUser , "TwoScanCode")
+    var UserRole:String = ""
+    var Result:ScanCodeRequest?
+    
+    if let url = NSURL(string: urlStr) {
+        let postRequest = NSMutableURLRequest(URL: url)
+        postRequest.timeoutInterval = 5.0
+        postRequest.HTTPMethod = "POST"
+        //postRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let param = [
+            "ScanRequest":ActivityID
+        ]
+        let jsonparam = NSJSONSerialization.dataWithJSONObject(param, options: NSJSONWritingOptions.PrettyPrinted, error: nil)
+        
+        postRequest.HTTPBody = jsonparam
+        
+        if let response = NSURLConnection.sendSynchronousRequest(postRequest, returningResponse: nil, error: nil) {
+            let responsestr = NSString(data: response, encoding: NSUTF8StringEncoding)
+            println(responsestr)
+            
+            var json = JSON(data: response)
+            Result = ScanCodeRequest(ScanRequest: json["ScanRequest"].string!)
+        }
+    }
+    return Result!
+}
+
+func EndActivity(活动ID ActivityID:Int) -> PullDownResult //结束活动
+{
+    let urlStr = NSString(format: "http://%@/%@", BaseUrlMUser , "FinishActivity")
+    var UserRole:String = ""
+    var Result:PullDownResult?
+    
+    if let url = NSURL(string: urlStr) {
+        let postRequest = NSMutableURLRequest(URL: url)
+        postRequest.timeoutInterval = 5.0
+        postRequest.HTTPMethod = "POST"
+        //postRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let param = [
+            "IndexId":ActivityID
+        ]
+        let jsonparam = NSJSONSerialization.dataWithJSONObject(param, options: NSJSONWritingOptions.PrettyPrinted, error: nil)
+        
+        postRequest.HTTPBody = jsonparam
+        
+        if let response = NSURLConnection.sendSynchronousRequest(postRequest, returningResponse: nil, error: nil) {
+            let responsestr = NSString(data: response, encoding: NSUTF8StringEncoding)
+            println(responsestr)
+            
+            var json = JSON(data: response)
+            Result = PullDownResult(PtrRequest: nil, ErrorMsg: json["ErrorMsg"].string!)
+        }
+    }
+    return Result!
+}

@@ -20,10 +20,10 @@ class PullDownRequest: NSObject {
 
 
 class PullDownResult: NSObject {
-    var PtrRequest:ResultType
+    var PtrRequest:ResultType?
     var ErrorMsg:String
     
-    init(PtrRequest:ResultType,ErrorMsg:String) {
+    init(PtrRequest:ResultType?,ErrorMsg:String) {
         self.PtrRequest = PtrRequest
         self.ErrorMsg = ErrorMsg
     }

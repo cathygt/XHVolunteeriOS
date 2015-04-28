@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource {
     
     var loadMoreText = UILabel()//用于显示上拉刷新提示

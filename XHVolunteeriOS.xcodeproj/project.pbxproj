@@ -41,6 +41,9 @@
 		78F663DD1AEE2021004B12C1 /* ActivityDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F663DC1AEE2021004B12C1 /* ActivityDetailCell.swift */; };
 		78F663DF1AEF0DF1004B12C1 /* GetUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F663DE1AEF0DF1004B12C1 /* GetUserCell.swift */; };
 		78F663E11AEF1883004B12C1 /* EditUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F663E01AEF1883004B12C1 /* EditUserCell.swift */; };
+		78F663E31AEF7987004B12C1 /* UserIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F663E21AEF7987004B12C1 /* UserIdentity.swift */; };
+		78F663E51AEF875D004B12C1 /* 2015.png in Resources */ = {isa = PBXBuildFile; fileRef = 78F663E41AEF875D004B12C1 /* 2015.png */; };
+		78F663E71AEF9211004B12C1 /* QRcodeShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F663E61AEF9211004B12C1 /* QRcodeShowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,9 @@
 		78F663DC1AEE2021004B12C1 /* ActivityDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityDetailCell.swift; path = XHVolunteeriOS/ActivityDetailCell.swift; sourceTree = "<group>"; };
 		78F663DE1AEF0DF1004B12C1 /* GetUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserCell.swift; sourceTree = "<group>"; };
 		78F663E01AEF1883004B12C1 /* EditUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditUserCell.swift; sourceTree = "<group>"; };
+		78F663E21AEF7987004B12C1 /* UserIdentity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserIdentity.swift; sourceTree = "<group>"; };
+		78F663E41AEF875D004B12C1 /* 2015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2015.png; path = ../../../../Pictures/2015.png; sourceTree = "<group>"; };
+		78F663E61AEF9211004B12C1 /* QRcodeShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRcodeShowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,7 @@
 				7884EB831ADBA02500CC97F0 /* AppDelegate.swift */,
 				7884EB851ADBA02500CC97F0 /* ViewController.swift */,
 				782195E41AE24AC80018AC26 /* SwiftyJSON.swift */,
+				78F663E41AEF875D004B12C1 /* 2015.png */,
 				7884EB8A1ADBA02500CC97F0 /* Images.xcassets */,
 				7884EBA31ADBC54D00CC97F0 /* Main.storyboard */,
 				7884EB8C1ADBA02500CC97F0 /* LaunchScreen.xib */,
@@ -194,6 +201,7 @@
 				78DEC85C1ADCEF4A00AC1846 /* SettingEditTableViewController.swift */,
 				782195961AE2463A0018AC26 /* LoginViewController.swift */,
 				78433E0C1AE4E86100D2E72F /* MainTabBarViewController.swift */,
+				78F663E61AEF9211004B12C1 /* QRcodeShowViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -212,6 +220,7 @@
 				78CC75AD1ADE6A6500CFC2CB /* ScanCode.swift */,
 				78D8BAB71AE75F8B00CBBA9A /* UpdateType.swift */,
 				78D8BAB91AE7604900CBBA9A /* PtrUpdateData.swift */,
+				78F663E21AEF7987004B12C1 /* UserIdentity.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -319,6 +328,7 @@
 				7884EBA51ADBC54D00CC97F0 /* Main.storyboard in Resources */,
 				7884EB8E1ADBA02500CC97F0 /* LaunchScreen.xib in Resources */,
 				7884EB8B1ADBA02500CC97F0 /* Images.xcassets in Resources */,
+				78F663E51AEF875D004B12C1 /* 2015.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,10 +364,12 @@
 				78CC75AA1ADE5B3100CFC2CB /* Login.swift in Sources */,
 				78DEC85F1ADD0BBD00AC1846 /* ActivityInfo.swift in Sources */,
 				7884EB841ADBA02500CC97F0 /* AppDelegate.swift in Sources */,
+				78F663E31AEF7987004B12C1 /* UserIdentity.swift in Sources */,
 				782195E51AE24AC80018AC26 /* SwiftyJSON.swift in Sources */,
 				78F663DD1AEE2021004B12C1 /* ActivityDetailCell.swift in Sources */,
 				78F663E11AEF1883004B12C1 /* EditUserCell.swift in Sources */,
 				78DEC8541ADCBC7C00AC1846 /* SettingTableViewController.swift in Sources */,
+				78F663E71AEF9211004B12C1 /* QRcodeShowViewController.swift in Sources */,
 				78CC75A61ADE552500CFC2CB /* EditUserInfo.swift in Sources */,
 				78CC75A41ADE4FA800CFC2CB /* IUserReposity.swift in Sources */,
 				78F663DF1AEF0DF1004B12C1 /* GetUserCell.swift in Sources */,

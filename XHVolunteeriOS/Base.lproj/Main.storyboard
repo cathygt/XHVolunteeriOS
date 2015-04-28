@@ -1131,6 +1131,39 @@
             </objects>
             <point key="canvasLocation" x="1184.5" y="783.5"/>
         </scene>
+        <!--生成二维码-->
+        <scene sceneID="mvl-67-YVS">
+            <objects>
+                <viewController title="生成二维码" id="Wd0-ND-LbL" customClass="QRcodeShowViewController" customModule="XHVolunteeriOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x00-O7-Pid"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Ba-fw-ygU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vMp-34-uf3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gKx-Wc-lGs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gKx-Wc-lGs" firstAttribute="leading" secondItem="vMp-34-uf3" secondAttribute="leading" id="P1l-O2-pmE"/>
+                            <constraint firstAttribute="bottom" secondItem="gKx-Wc-lGs" secondAttribute="bottom" id="hBq-JZ-h33"/>
+                            <constraint firstAttribute="trailing" secondItem="gKx-Wc-lGs" secondAttribute="trailing" id="mlB-am-rhZ"/>
+                            <constraint firstItem="gKx-Wc-lGs" firstAttribute="top" secondItem="vMp-34-uf3" secondAttribute="top" id="v95-5K-pOK"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="QRcodeView" destination="gKx-Wc-lGs" id="iqX-x6-vjf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="75y-z2-FaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2318.5" y="1146.5"/>
+        </scene>
         <!--Rcode View Controller-->
         <scene sceneID="WwQ-DO-lfU">
             <objects>
@@ -1412,6 +1445,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="Wd0-ND-LbL" kind="show" identifier="QRcodeShowView" id="32v-hY-3zn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gnm-v2-T04" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1615,7 +1651,7 @@
         <image name="setting" width="19" height="19"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zWP-aT-ciX"/>
+        <segue reference="WZc-eS-g75"/>
         <segue reference="UEa-ga-Mu4"/>
     </inferredMetricsTieBreakers>
 </document>
