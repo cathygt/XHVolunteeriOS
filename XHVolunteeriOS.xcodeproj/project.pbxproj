@@ -39,6 +39,8 @@
 		78F0E95F1AE1108300562E8D /* ActivityReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F0E95E1AE1108300562E8D /* ActivityReposity.swift */; };
 		78F663DB1AEDCA09004B12C1 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F663DA1AEDCA09004B12C1 /* ActivityCell.swift */; };
 		78F663DD1AEE2021004B12C1 /* ActivityDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F663DC1AEE2021004B12C1 /* ActivityDetailCell.swift */; };
+		78F663DF1AEF0DF1004B12C1 /* GetUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F663DE1AEF0DF1004B12C1 /* GetUserCell.swift */; };
+		78F663E11AEF1883004B12C1 /* EditUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F663E01AEF1883004B12C1 /* EditUserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		78F0E95E1AE1108300562E8D /* ActivityReposity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityReposity.swift; sourceTree = "<group>"; };
 		78F663DA1AEDCA09004B12C1 /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityCell.swift; path = XHVolunteeriOS/ActivityCell.swift; sourceTree = "<group>"; };
 		78F663DC1AEE2021004B12C1 /* ActivityDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityDetailCell.swift; path = XHVolunteeriOS/ActivityDetailCell.swift; sourceTree = "<group>"; };
+		78F663DE1AEF0DF1004B12C1 /* GetUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserCell.swift; sourceTree = "<group>"; };
+		78F663E01AEF1883004B12C1 /* EditUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditUserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +221,8 @@
 			children = (
 				78F663DA1AEDCA09004B12C1 /* ActivityCell.swift */,
 				78F663DC1AEE2021004B12C1 /* ActivityDetailCell.swift */,
+				78F663DE1AEF0DF1004B12C1 /* GetUserCell.swift */,
+				78F663E01AEF1883004B12C1 /* EditUserCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -350,9 +356,11 @@
 				7884EB841ADBA02500CC97F0 /* AppDelegate.swift in Sources */,
 				782195E51AE24AC80018AC26 /* SwiftyJSON.swift in Sources */,
 				78F663DD1AEE2021004B12C1 /* ActivityDetailCell.swift in Sources */,
+				78F663E11AEF1883004B12C1 /* EditUserCell.swift in Sources */,
 				78DEC8541ADCBC7C00AC1846 /* SettingTableViewController.swift in Sources */,
 				78CC75A61ADE552500CFC2CB /* EditUserInfo.swift in Sources */,
 				78CC75A41ADE4FA800CFC2CB /* IUserReposity.swift in Sources */,
+				78F663DF1AEF0DF1004B12C1 /* GetUserCell.swift in Sources */,
 				78CC75A21ADE10A200CFC2CB /* IActivityReposity.swift in Sources */,
 				78F0E95F1AE1108300562E8D /* ActivityReposity.swift in Sources */,
 				78D8BABA1AE7604900CBBA9A /* PtrUpdateData.swift in Sources */,

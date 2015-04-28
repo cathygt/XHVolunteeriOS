@@ -9,32 +9,34 @@
 import Foundation
 
 class InfoIn: NSObject {
-    var UserId:Int
+    var UserId:String
     
-    init(UserId:Int)
+    init(UserId:String)
     {
         self.UserId = UserId
     }
 }
 
 class InfoOut: NSObject {
-    var UserId:Int
+    var UserID:String
     var UserName:String
     var UserRole:String
     var PhoneNumber:String
     var TeamName:String
+    var QQNumber:String
     var PersonalInfo:String
     var ActivityLong:String
     var Sex:Bool
-    var Tick:Bool
+    var Tick:Int
     
-    init(UserId:Int, UserName:String, UserRole:String, PhoneNumber:String, TeamName:String, PersonalInfo:String, ActivityLong:String, Sex:Bool, Tick:Bool)
+    init(UserID:String, UserName:String, UserRole:String, PhoneNumber:String, TeamName:String, QQNumber:String, PersonalInfo:String, ActivityLong:String, Sex:Bool, Tick:Int)
     {
-        self.UserId = UserId
+        self.UserID = UserID
         self.UserName = UserName
         self.UserRole = UserRole
         self.PhoneNumber = PhoneNumber
         self.TeamName = TeamName
+        self.QQNumber = QQNumber
         self.PersonalInfo = PersonalInfo
         self.ActivityLong = ActivityLong
         self.Sex = Sex

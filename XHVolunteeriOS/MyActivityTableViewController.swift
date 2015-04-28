@@ -52,10 +52,14 @@ class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,
     override func scrollViewDidScroll(scrollView: UIScrollView){//开始上拉到特定位置后改变列表底部的提示
         
         if scrollView.contentOffset.y > (scrollView.contentSize.height - scrollView.frame.size.height + 30){
-            loadMoreText.text = "上拉查看更多1"
+            loadMoreText.text = "上拉查看更多"
         }
         else{
-            loadMoreText.text = "上拉查看更多2"
+            loadMoreText.text = "上拉查看更多"
+        }
+        if(AllActivityDB.count == 0)
+        {
+            loadMoreText.text = "没有相关数据"
         }
     }
     override func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool){
@@ -100,7 +104,7 @@ class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,
         for i in 0..<ActivityAll.updatedata.count
         {
             var Activity = ActivityAll.updatedata[i] as PtrUpdaeData!
-            println(Activity.Data.ActivityName)
+            
             AllActivityDB.append(ActivityDB(IndexId: Activity.Data.IndexId,
                 ActivityName: Activity.Data.ActivityName,
                 TeamName: Activity.Data.TeamName,
