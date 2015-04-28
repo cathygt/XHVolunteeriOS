@@ -525,7 +525,7 @@
         <scene sceneID="Id6-gy-mpB">
             <objects>
                 <tableViewController id="nLK-uy-7bP" customClass="SettingEditTableViewController" customModule="XHVolunteeriOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="tth-Az-fJv" customClass="EditUserCell" customModule="XHVolunteeriOS" customModuleProvider="target">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="tth-Az-fJv" customClass="EditUserCell" customModule="XHVolunteeriOS" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="64" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
@@ -684,13 +684,14 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="保存" id="agx-dn-1sT">
                             <connections>
-                                <action selector="CloseViewButton:" destination="nLK-uy-7bP" id="9fD-Ga-m7f"/>
+                                <segue destination="nLR-3O-ftL" kind="unwind" unwindAction="saveUserEditDetail:" id="7Uy-b0-XwS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWF-fr-R62" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="nLR-3O-ftL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1832.5" y="1184.5"/>
         </scene>

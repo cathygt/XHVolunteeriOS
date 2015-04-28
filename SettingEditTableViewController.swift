@@ -10,6 +10,8 @@ import UIKit
 
 class SettingEditTableViewController: UITableViewController {
 
+    var UserEditOut:EditOut?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,5 +37,6 @@ class SettingEditTableViewController: UITableViewController {
     @IBAction func CloseViewButton(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
 
 }
