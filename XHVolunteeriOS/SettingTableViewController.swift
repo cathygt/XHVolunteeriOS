@@ -45,7 +45,7 @@ class SettingTableViewController: UITableViewController {
     {
         let EditUserController = segue.sourceViewController as SettingEditTableViewController
         let cell = EditUserController.tableView.self as EditUserCell
-        EditUser(性别: cell.SexTextField.text == "男" ? true : false, 联系方式: cell.PhoneNumberTextField.text, QQ号: cell.QQNumberTextField.text, 个人简介: cell.PersonalInfoTextField.text)
+        EditUser(性别: cell.SexSegmentedControl.selectedSegmentIndex == 0 ? true : false, 联系方式: cell.PhoneNumberTextField.text, QQ号: cell.QQNumberTextField.text, 个人简介: cell.PersonalInfoTextField.text)
         println("修改完成")
         UserDetailShow()
         tableView.reloadData()

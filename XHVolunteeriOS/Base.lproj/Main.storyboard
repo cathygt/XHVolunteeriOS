@@ -573,17 +573,21 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="男" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bX2-Zr-G8T">
-                                                    <rect key="frame" x="95" y="10" width="272" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="949-hl-1Ml">
+                                                    <rect key="frame" x="94" y="7" width="123" height="29"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="123" id="NHn-cg-445"/>
+                                                    </constraints>
+                                                    <segments>
+                                                        <segment title="男"/>
+                                                        <segment title="女"/>
+                                                    </segments>
+                                                    <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </segmentedControl>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="bX2-Zr-G8T" firstAttribute="leading" secondItem="hGs-Tq-OYf" secondAttribute="leadingMargin" constant="87" id="0F2-D3-Lmd"/>
-                                                <constraint firstItem="bX2-Zr-G8T" firstAttribute="top" secondItem="hGs-Tq-OYf" secondAttribute="topMargin" constant="2" id="WST-S1-gIH"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="bX2-Zr-G8T" secondAttribute="bottom" constant="-5" id="Zo5-NE-ORb"/>
-                                                <constraint firstItem="bX2-Zr-G8T" firstAttribute="trailing" secondItem="hGs-Tq-OYf" secondAttribute="trailingMargin" id="bbB-uV-0qm"/>
+                                                <constraint firstItem="949-hl-1Ml" firstAttribute="leading" secondItem="hGs-Tq-OYf" secondAttribute="leadingMargin" constant="86" id="9UM-2I-sWQ"/>
+                                                <constraint firstItem="949-hl-1Ml" firstAttribute="top" secondItem="hGs-Tq-OYf" secondAttribute="topMargin" constant="-1" id="aav-i2-EeW"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -670,7 +674,7 @@
                             <outlet property="PersonalInfoTextField" destination="SZp-AG-4jM" id="nvg-01-bHi"/>
                             <outlet property="PhoneNumberTextField" destination="Ox6-uC-2PF" id="sMY-lo-3Zm"/>
                             <outlet property="QQNumberTextField" destination="Ngw-GK-eKE" id="0Cq-ag-bw1"/>
-                            <outlet property="SexTextField" destination="bX2-Zr-G8T" id="x9Y-pn-e70"/>
+                            <outlet property="SexSegmentedControl" destination="949-hl-1Ml" id="qba-c2-CVy"/>
                             <outlet property="UserNameUILabel" destination="HXt-7A-bpC" id="Ejq-1E-OJf"/>
                             <outlet property="dataSource" destination="nLK-uy-7bP" id="oyP-qL-yQ6"/>
                             <outlet property="delegate" destination="nLK-uy-7bP" id="sG1-nw-685"/>

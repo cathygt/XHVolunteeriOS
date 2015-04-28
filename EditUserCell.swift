@@ -13,5 +13,5 @@ class EditUserCell: UITableView {
     @IBOutlet var PhoneNumberTextField:UITextField!
     @IBOutlet var QQNumberTextField:UITextField!
     @IBOutlet var PersonalInfoTextField:UITextView!
-    @IBOutlet var SexTextField:UITextField!
+    @IBOutlet var SexSegmentedControl: UISegmentedControl!
 }

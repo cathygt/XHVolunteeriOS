@@ -31,12 +31,12 @@ class SettingEditTableViewController: UITableViewController {
         cell.PhoneNumberTextField.text = UserDetail.PhoneNumber
         cell.QQNumberTextField.text = UserDetail.QQNumber
         cell.PersonalInfoTextField.text = UserDetail.PersonalInfo
-        cell.SexTextField.text = UserDetail.Sex == true ? "男" : "女"
+        cell.SexSegmentedControl.selectedSegmentIndex = UserDetail.Sex == true ? 0 : 1
     }
     
     @IBAction func CloseViewButton(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-
+    
 }
