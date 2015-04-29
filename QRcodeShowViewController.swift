@@ -11,6 +11,7 @@ import UIKit
 class QRcodeShowViewController: UIViewController {
 
     var IndexId:Int?
+    var IndexName:String?
     
     @IBOutlet var QRcodeView: UIImageView!
     
@@ -20,9 +21,11 @@ class QRcodeShowViewController: UIViewController {
         // Do any additional setup after loading the view.
         println(IndexId)
         println("**")
-        QRcodeView = UIImageView()
-        QRcodeView.image = UIImage(named: "2015")
-        self.view.addSubview(QRcodeView)
+        var url : NSURL = NSURL(string: "http://172.16.100.41:8080/PersonCenter/Public/CreatCode/\(IndexId)")!
+        var data : NSData = NSData(contentsOfURL:url)!
+        QRcodeView.image = UIImage(data:data, scale: 1.0)
+        QRcodeView.contentMode = UIViewContentMode.ScaleAspectFit
+        title = IndexName
     }
 
     override func didReceiveMemoryWarning() {

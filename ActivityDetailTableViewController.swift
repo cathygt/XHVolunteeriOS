@@ -96,8 +96,8 @@ class ActivityDetailTableViewController: UITableViewController ,UIActionSheetDel
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "QRcodeShowView" //进入数据详情页面 ShowActivity为storyboard的ldentifier标示
         {
-            println(ActivityDetail.IndexId)
             (segue.destinationViewController as QRcodeShowViewController).IndexId = ActivityDetail.IndexId
+            (segue.destinationViewController as QRcodeShowViewController).IndexName = ActivityDetail.ActivityName
         }
     }
 }

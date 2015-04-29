@@ -15,6 +15,7 @@ class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,
     let tableFooterView = UIView()//列表的底部，用于显示“上拉查看更多”的提示，当上拉后显示类容为“松开加载更多”。
     var page = 1//上拉加载后的页数
     var itemNumber:RequestType = RequestType.Mine //页面组别初始化
+    var Skip = 0//列表开始加载位置
     
     var AllActivityDB:[ActivityDB] = [] //初始化列表数据
     
@@ -76,9 +77,8 @@ class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,
         }
     }
     func initArr(){//上拉后加载数组arr
-        for(var i=0;i<10;i++){
-            println("当前是第\(page)页,第\(i+1)条")
-        }
+        ActivityLoad()
+        self.tableView.reloadData()
     }
     ////////////////////////////////////////////////////
     
@@ -86,6 +86,7 @@ class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,
     func sortArray()
     {
         AllActivityDB = []//数据列表初始化
+        Skip = 0
         ActivityLoad()
         
         println("下拉刷新")
@@ -101,7 +102,7 @@ class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,
     //读取数据库附入数据列表
     func ActivityLoad()
     {
-        var ActivityAll:PtrResponse = GetActivitiesData(PullDownRequest(ptrRequest: PtrRequest(Skip: 0, Count: 10, LocalData: PtrUpdateParam(Id: nil, IndexId: nil, Tick: nil), Guid: ""), request: itemNumber))
+        var ActivityAll:PtrResponse = GetActivitiesData(PullDownRequest(ptrRequest: PtrRequest(Skip: Skip, Count: 10, LocalData: PtrUpdateParam(Id: nil, IndexId: nil, Tick: nil), Guid: ""), request: itemNumber))
         for i in 0..<ActivityAll.updatedata.count
         {
             var Activity = ActivityAll.updatedata[i] as PtrUpdaeData!
@@ -121,11 +122,13 @@ class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,
                 IsJoining: Activity.Data.IsJoining,
                 Id: Activity.Data.Id))
         }
+        Skip += 10
     }
     
     //点击顶部选择按钮显示不同的列表 "正在参与"／“已结束”／“缺席”
     @IBAction func segmentDidchange(sender: UISegmentedControl) {
         AllActivityDB = []//数据列表初始化
+        Skip = 0
         
         switch sender.selectedSegmentIndex
         {

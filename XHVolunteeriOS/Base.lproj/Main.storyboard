@@ -1144,20 +1144,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gKx-Wc-lGs">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="10" y="10" width="355" height="647"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gKx-Wc-lGs" firstAttribute="leading" secondItem="vMp-34-uf3" secondAttribute="leading" id="P1l-O2-pmE"/>
-                            <constraint firstAttribute="bottom" secondItem="gKx-Wc-lGs" secondAttribute="bottom" id="hBq-JZ-h33"/>
-                            <constraint firstAttribute="trailing" secondItem="gKx-Wc-lGs" secondAttribute="trailing" id="mlB-am-rhZ"/>
-                            <constraint firstItem="gKx-Wc-lGs" firstAttribute="top" secondItem="vMp-34-uf3" secondAttribute="top" id="v95-5K-pOK"/>
+                            <constraint firstItem="gKx-Wc-lGs" firstAttribute="leading" secondItem="vMp-34-uf3" secondAttribute="leading" constant="10" id="P1l-O2-pmE"/>
+                            <constraint firstAttribute="bottom" secondItem="gKx-Wc-lGs" secondAttribute="bottom" constant="10" id="hBq-JZ-h33"/>
+                            <constraint firstAttribute="trailing" secondItem="gKx-Wc-lGs" secondAttribute="trailing" constant="10" id="mlB-am-rhZ"/>
+                            <constraint firstItem="gKx-Wc-lGs" firstAttribute="top" secondItem="vMp-34-uf3" secondAttribute="top" constant="10" id="v95-5K-pOK"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="QRcodeView" destination="gKx-Wc-lGs" id="iqX-x6-vjf"/>
+                        <outlet property="QRcodeView" destination="gKx-Wc-lGs" id="tM6-ff-vhm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75y-z2-FaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
