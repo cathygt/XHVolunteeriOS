@@ -10,13 +10,14 @@ import UIKit
 
 class ActivityDetailTableViewController: UITableViewController ,UIActionSheetDelegate {
 
-    var ActivityDetail:ActivityDB!
+    var ActivityDetail:ActivityInfos!
+    var indexId:Int!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        println(ActivityDetail.ActivityName)
+        
+        ActivityDetail = GetActivityInfos(活动ID: indexId)
         
         ActivityDetailShow()
 
@@ -57,7 +58,7 @@ class ActivityDetailTableViewController: UITableViewController ,UIActionSheetDel
             actionSheet.addButtonWithTitle("生成二维码")
             actionSheet.addButtonWithTitle("结束活动")
         }
-        if(Identity == UserIdentity.MemberView && ActivityDetail.IsJoining == false)
+        if(Identity == UserIdentity.MemberView && ActivityDetail.IsJoining == true)
         {
             actionSheet.addButtonWithTitle("加入活动")
         }
@@ -77,11 +78,17 @@ class ActivityDetailTableViewController: UITableViewController ,UIActionSheetDel
             QRcodeGet()
         case (2):
             println("结束活动")
-            println(EndActivity(活动ID: ActivityDetail.IndexId).ErrorMsg)
+            println(EndActivity(活动ID: ActivityDetail.ActivityID).ErrorMsg)
             ActivityDetailShow()
         case (3):
             println("加入活动")
-            println(AddApply(ActivityDetail.IndexId).ErrorMsg)
+            
+            var alert = UIAlertView()
+            alert.title = "提示"
+            alert.message = AddApply(ActivityDetail.ActivityID).ErrorMsg
+            alert.addButtonWithTitle("确认")
+            alert.show()
+            
             ActivityDetailShow()
         default:
             println("取消")
@@ -96,7 +103,7 @@ class ActivityDetailTableViewController: UITableViewController ,UIActionSheetDel
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "QRcodeShowView" //进入数据详情页面 ShowActivity为storyboard的ldentifier标示
         {
-            (segue.destinationViewController as QRcodeShowViewController).IndexId = ActivityDetail.IndexId
+            (segue.destinationViewController as QRcodeShowViewController).ActivityID = ActivityDetail.ActivityID
             (segue.destinationViewController as QRcodeShowViewController).IndexName = ActivityDetail.ActivityName
         }
     }

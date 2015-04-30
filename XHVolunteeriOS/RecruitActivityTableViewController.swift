@@ -157,7 +157,7 @@ class RecruitActivityTableViewController: UITableViewController,UIScrollViewDele
             if let indexPath = self.tableView.indexPathForSelectedRow()
             {
                 let ActivityOneCell = AllActivityDB[indexPath.row] as ActivityDB
-                (segue.destinationViewController as ActivityDetailTableViewController).ActivityDetail = ActivityOneCell
+                (segue.destinationViewController as ActivityDetailTableViewController).indexId = ActivityOneCell.IndexId
             }
         }
     }

@@ -30,7 +30,7 @@ class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,
         
         //上拉加载
         self.createTableFooter()
-
+        
         ActivityLoad()
     }
     
@@ -91,7 +91,7 @@ class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,
         
         println("下拉刷新")
         tableView.reloadData()
-
+        
         refreshControl?.endRefreshing()
         if self.refreshControl?.refreshing == false
         {
@@ -144,7 +144,7 @@ class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,
         ActivityLoad()
         tableView.reloadData()
     }
-
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -157,14 +157,14 @@ class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let ActivityOneCell = AllActivityDB[indexPath.row] as ActivityDB
         let cell = tableView.dequeueReusableCellWithIdentifier("MyActivityCell", forIndexPath: indexPath) as ActivityCell
-
+        
         cell.ActivityNameLabel.text = ActivityOneCell.ActivityName
         cell.ActivityStartTimeLabel.text = "开始时间：" + DateTimeChange(ActivityOneCell.ActivityStartTime)
         cell.ActivityEndTimeLabel.text = "结束时间：" + DateTimeChange(ActivityOneCell.ActivityEndTime)
         
         return cell
     }
-
+    
     //日期格式转化
     func DateTimeChange(DateTime: String) -> String
     {
@@ -180,7 +180,7 @@ class MyActivityTableViewController: UITableViewController,UIScrollViewDelegate,
             if let indexPath = self.tableView.indexPathForSelectedRow()
             {
                 let ActivityOneCell = AllActivityDB[indexPath.row] as ActivityDB
-                (segue.destinationViewController as ActivityDetailTableViewController).ActivityDetail = ActivityOneCell
+                (segue.destinationViewController as ActivityDetailTableViewController).indexId = ActivityOneCell.IndexId
             }
         }
     }

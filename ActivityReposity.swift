@@ -56,9 +56,9 @@ func GetActivitiesData(postData :PullDownRequest) -> PtrResponse
     return Response!
 }
 
-func AddApply(ActivityID:Int) -> PullDownResult //参加报名
+func AddApply(ActivityID:String) -> PullDownResult //参加报名
 {
-    let urlStr = NSString(format: "http://%@/%@", BaseUrlMUser , "JoinActivity")
+    let urlStr = NSString(format: "http://%@/%@", BaseUrlMActivity , "JoinActivity")
     var UserRole:String = ""
     var Result:PullDownResult?
     
@@ -85,9 +85,9 @@ func AddApply(ActivityID:Int) -> PullDownResult //参加报名
     }
     return Result!
 }
-func ScanCode(ActivityID:Int) -> ScanCodeRequest //首次刷二维码
+func ScanCode(ActivityID:String) -> ScanCodeRequest //首次刷二维码
 {
-    let urlStr = NSString(format: "http://%@/%@", BaseUrlMUser , "ScanCode")
+    let urlStr = NSString(format: "http://%@/%@", BaseUrlMActivity , "ScanCode")
     var UserRole:String = ""
     var Result:ScanCodeRequest?
     
@@ -114,9 +114,9 @@ func ScanCode(ActivityID:Int) -> ScanCodeRequest //首次刷二维码
     }
     return Result!
 }
-func TwoScanCode(ActivityID:Int) -> ScanCodeRequest //第二次刷二维码
+func TwoScanCode(ActivityID:String) -> ScanCodeRequest //第二次刷二维码
 {
-    let urlStr = NSString(format: "http://%@/%@", BaseUrlMUser , "TwoScanCode")
+    let urlStr = NSString(format: "http://%@/%@", BaseUrlMActivity , "TwoScanCode")
     var UserRole:String = ""
     var Result:ScanCodeRequest?
     
@@ -144,9 +144,9 @@ func TwoScanCode(ActivityID:Int) -> ScanCodeRequest //第二次刷二维码
     return Result!
 }
 
-func EndActivity(活动ID ActivityID:Int) -> PullDownResult //结束活动
+func EndActivity(活动ID ActivityID:String) -> PullDownResult //结束活动
 {
-    let urlStr = NSString(format: "http://%@/%@", BaseUrlMUser , "FinishActivity")
+    let urlStr = NSString(format: "http://%@/%@", BaseUrlMActivity , "FinishActivity")
     var UserRole:String = ""
     var Result:PullDownResult?
     
@@ -172,4 +172,51 @@ func EndActivity(活动ID ActivityID:Int) -> PullDownResult //结束活动
         }
     }
     return Result!
+}
+
+func GetActivityInfos(活动ID IndexId:Int) -> ActivityInfos  //获取活动详细最新信息
+{
+    let urlStr = NSString(format: "http://%@/%@", BaseUrlMActivity , "GetActivity")
+    var UserRole:String = ""
+    var Response:ActivityInfos?
+    
+    if let url = NSURL(string: urlStr) {
+        let postRequest = NSMutableURLRequest(URL: url)
+        postRequest.timeoutInterval = 5.0
+        postRequest.HTTPMethod = "POST"
+        //postRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let param = [
+            "IndexId":IndexId,
+            "tick":"635642848287116232"
+        ]
+        let jsonparam = NSJSONSerialization.dataWithJSONObject(param, options: NSJSONWritingOptions.PrettyPrinted, error: nil)
+        
+        postRequest.HTTPBody = jsonparam
+        
+        if let response = NSURLConnection.sendSynchronousRequest(postRequest, returningResponse: nil, error: nil) {
+            let responsestr = NSString(data: response, encoding: NSUTF8StringEncoding)
+            
+            //////////////////////////////////////////
+            // 解析返回的JSON数据
+            
+            var json = JSON(data: response)
+            Response = ActivityInfos(IndexId: json["IndexId"].int!,
+                ActivityID: json["ActivityID"].string!,
+                ActivityName: json["ActivityName"].string!,
+                TeamName: json["TeamName"].string!,
+                UserName: json["UserName"].string!,
+                ActivityStartTime: json["ActivityStartTime"].string!,
+                ActivityEndTime: json["ActivityEndTime"].string!,
+                ActivityLocation: json["ActivityLocation"].string!,
+                ActivitySummary: json["ActivitySummary"].string!,
+                ActivityState: json["ActivityState"].string!,
+                ActivityAttend: json["ActivityAttend"].int!,
+                JoinCount: json["JoinCount"].int!,
+                Tick: json["Tick"].int!,
+                IsJoining: json["IsApply"].bool!)
+            
+        }
+    }
+    return Response!
 }

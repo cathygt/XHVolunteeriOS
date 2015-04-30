@@ -10,7 +10,7 @@ import UIKit
 
 class QRcodeShowViewController: UIViewController {
 
-    var IndexId:Int?
+    var ActivityID:String?
     var IndexName:String?
     
     @IBOutlet var QRcodeView: UIImageView!
@@ -19,9 +19,8 @@ class QRcodeShowViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        println(IndexId)
-        println("**")
-        var url : NSURL = NSURL(string: "http://172.16.100.41:8080/PersonCenter/Public/CreatCode/\(IndexId)")!
+
+        var url : NSURL = NSURL(string: "http://172.16.100.41:8080/PersonCenter/Public/CreatCode/" + ActivityID!)!
         var data : NSData = NSData(contentsOfURL:url)!
         QRcodeView.image = UIImage(data:data, scale: 1.0)
         QRcodeView.contentMode = UIViewContentMode.ScaleAspectFit
