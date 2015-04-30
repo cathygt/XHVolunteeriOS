@@ -34,7 +34,7 @@ class ActivityDetailTableViewController: UITableViewController ,UIActionSheetDel
         let cell = tableView.self as ActivityDetailCell
         cell.ActivityNameLabel.text = ActivityDetail.ActivityName
         cell.ActivityLocationLabel.text = ActivityDetail.ActivityLocation
-        cell.JoinCountLabel.text = ActivityDetail.ActivityAttend.description + "/" + ActivityDetail.JoinCount.description
+        cell.JoinCountLabel.text = ActivityDetail.JoinCount.description + "/" + ActivityDetail.ActivityAttend.description
         cell.ActivityStartTimeLabel.text = DateTimeChange(ActivityDetail.ActivityStartTime)
         cell.ActivityEndTimeLabel.text = DateTimeChange(ActivityDetail.ActivityEndTime)
         cell.ActivitySummaryLabel.text = ActivityDetail.ActivitySummary

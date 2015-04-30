@@ -100,11 +100,11 @@ class RecruitActivityTableViewController: UITableViewController,UIScrollViewDele
     //读取数据库附入数据列表
     func ActivityLoad()
     {
-        var ActivityAll:PtrResponse = GetActivitiesData(PullDownRequest(ptrRequest: PtrRequest(Skip: Skip, Count: 10, LocalData: PtrUpdateParam(Id: nil, IndexId: nil, Tick: nil), Guid: ""), request: RequestType.Manager))
+        var ActivityAll:PtrResponse = GetActivitiesData(PullDownRequest(ptrRequest: PtrRequest(Skip: Skip, Count: 10, LocalData: PtrUpdateParam(Id: nil, IndexId: nil, Tick: nil), Guid: ""), request: RequestType.All))
         for i in 0..<ActivityAll.updatedata.count
         {
             var Activity = ActivityAll.updatedata[i] as PtrUpdaeData!
-            println(Activity.Data.ActivityName)
+            
             AllActivityDB.append(ActivityDB(IndexId: Activity.Data.IndexId,
                 ActivityName: Activity.Data.ActivityName,
                 TeamName: Activity.Data.TeamName,

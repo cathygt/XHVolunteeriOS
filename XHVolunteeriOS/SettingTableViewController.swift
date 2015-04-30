@@ -12,12 +12,6 @@ class SettingTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         UserDetailShow()
     }
@@ -43,7 +37,7 @@ class SettingTableViewController: UITableViewController {
     
     @IBAction func saveUserEditDetail(segue:UIStoryboardSegue)
     {
-        let EditUserController = segue.sourceViewController as SettingEditTableViewController
+        let EditUserController = segue.sourceViewController as SettingEditTableViewController //调用SettingEditTableViewController页面
         let cell = EditUserController.tableView.self as EditUserCell
         EditUser(性别: cell.SexSegmentedControl.selectedSegmentIndex == 0 ? true : false, 联系方式: cell.PhoneNumberTextField.text, QQ号: cell.QQNumberTextField.text, 个人简介: cell.PersonalInfoTextField.text)
         println("修改完成")
