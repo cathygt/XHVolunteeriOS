@@ -44,4 +44,18 @@ class SettingTableViewController: UITableViewController {
         UserDetailShow()
         tableView.reloadData()
     }
+    
+    //页面对外接口
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "LoginOut" //进入数据详情页面 ShowActivity为storyboard的ldentifier标示
+        {
+            //设置存储信息
+            NSUserDefaults.standardUserDefaults().setObject("", forKey: "UserNameKey")
+            NSUserDefaults.standardUserDefaults().setObject("", forKey: "PwdKey")
+            
+            //设置同步
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+    }
+    
 }

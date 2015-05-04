@@ -15,21 +15,67 @@ class LoginViewController: UIViewController {
     @IBOutlet var UserName: UITextField!
     
     @IBOutlet var UserPassword: UITextField!
+    
+    @IBOutlet var LoginButton: UIButton!
+    
+    let UserNameKey = ""
+    let PwdKey = ""
+    let IsFirstLaunch = "ifl"
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        LastLogin()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //读取上次登录信息
+    func LastLogin()
+    {
+        //读取上次配置
+        self.UserName.text = NSUserDefaults.standardUserDefaults().valueForKey("UserNameKey") as String!
+        self.UserPassword.text = NSUserDefaults.standardUserDefaults().valueForKey("PwdKey") as String!
+        
+        //判断是否第一次启动：
+        if((NSUserDefaults.standardUserDefaults().boolForKey("IsFirstLaunch") as Bool!) == false){
+            //第一次启动，播放引导页面
+            println("第一次启动")
+            self.performSegueWithIdentifier("GuideShow", sender: self)
+            //设置为非第一次启动
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "IsFirstLaunch")
+        }else{
+            println("不是第一次启动")
+            if((self.UserPassword.text) != "")
+            {
+                UserLoginButton(LoginButton)
+            }
+
+        }
+    }
 
     @IBAction func UserLoginButton(sender: UIButton) {
-        let pullDownResult:PullDownResult = UserLogin(用户名: UserName.text,密码: UserPassword.text)
+        LoginOn()
+        
+        //设置存储信息
+        NSUserDefaults.standardUserDefaults().setObject(self.UserName.text, forKey: "UserNameKey")
+        NSUserDefaults.standardUserDefaults().setObject(self.UserPassword.text, forKey: "PwdKey")
 
+        //设置同步
+        NSUserDefaults.standardUserDefaults().synchronize()
+    }
+    
+    func LoginOn()
+    {
+        let pullDownResult:PullDownResult = UserLogin(用户名: UserName.text,密码: UserPassword.text)
+        
         if(pullDownResult.PtrRequest == ResultType.Success)
         {
             if(pullDownResult.ErrorMsg == "成员")
@@ -51,7 +97,6 @@ class LoginViewController: UIViewController {
             alert.addButtonWithTitle("取消")
             alert.show()
         }
-
     }
 
     
