@@ -10,7 +10,7 @@ import UIKit
 
 var Identity:UserIdentity?
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var UserName: UITextField!
     
@@ -99,6 +99,11 @@ class LoginViewController: UIViewController {
         }
     }
 
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        //收起键盘
+        UserName.resignFirstResponder()
+        UserPassword.resignFirstResponder()
+    }
     
     /*
     // MARK: - Navigation

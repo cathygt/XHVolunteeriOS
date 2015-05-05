@@ -256,7 +256,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gTr-LH-gmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1219.5" y="1519"/>
+            <point key="canvasLocation" x="951.5" y="1166.5"/>
         </scene>
         <!--设置-->
         <scene sceneID="lOB-c6-aj9">
@@ -274,16 +274,16 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gwR-vH-9o0" id="teV-gf-VEn">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王彤" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdg-o0-5HP">
-                                                    <rect key="frame" x="88" y="14" width="279" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="姓名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uB-Wy-i2b">
                                                     <rect key="frame" x="16" y="14" width="34" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdg-o0-5HP">
+                                                    <rect key="frame" x="88" y="14" width="279" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -334,7 +334,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="853271239" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0h-oK-AgQ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0h-oK-AgQ">
                                                     <rect key="frame" x="73" y="15" width="294" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -384,7 +384,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15606102273" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSh-Jv-CP0">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSh-Jv-CP0">
                                                     <rect key="frame" x="91" y="15" width="276" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -519,7 +519,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2p-Q6-frW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-923.5" y="1185.5"/>
+            <point key="canvasLocation" x="-1011.5" y="833.5"/>
         </scene>
         <!--编辑个人设置-->
         <scene sceneID="Id6-gy-mpB">
@@ -543,10 +543,10 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王彤" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXt-7A-bpC">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXt-7A-bpC" userLabel="姓名">
                                                     <rect key="frame" x="95" y="9" width="272" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -602,7 +602,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="15606102273" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ngw-GK-eKE">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ngw-GK-eKE">
                                                     <rect key="frame" x="95" y="8" width="272" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -627,7 +627,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="15606102273" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ox6-uC-2PF">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ox6-uC-2PF">
                                                     <rect key="frame" x="95" y="8" width="272" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -697,7 +697,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWF-fr-R62" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="nLR-3O-ftL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1832.5" y="1184.5"/>
+            <point key="canvasLocation" x="-1920.5" y="832.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AGp-xI-dfM">
@@ -715,12 +715,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0EZ-OX-b5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1375.5" y="1185.5"/>
+            <point key="canvasLocation" x="-1463.5" y="833.5"/>
         </scene>
-        <!--View Controller-->
+        <!--pagecontentviewcontroller-->
         <scene sceneID="2jw-dx-nPQ">
             <objects>
-                <viewController id="svZ-pI-8dR" sceneMemberID="viewController">
+                <viewController title="pagecontentviewcontroller" id="svZ-pI-8dR" customClass="PageContentViewController" customModule="XHVolunteeriOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IxU-NZ-aXC"/>
                         <viewControllerLayoutGuide type="bottom" id="E7n-JU-zbD"/>
@@ -729,14 +729,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="这是引导页" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ge-0k-4hJ">
-                                <rect key="frame" x="119" y="77" width="94" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8M-ma-jcj">
-                                <rect key="frame" x="143" y="163" width="60" height="30"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6o-eG-bVv">
+                                <rect key="frame" x="68" y="139" width="239" height="389"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="8yd-Wr-y3L"/>
+                                    <constraint firstAttribute="height" constant="389" id="940-RY-8LE"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8M-ma-jcj">
+                                <rect key="frame" x="120" y="615" width="134" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="A1y-Sk-t4d"/>
+                                    <constraint firstAttribute="height" constant="32" id="NNh-dN-s96"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="快速进入">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -745,13 +751,22 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="j8M-ma-jcj" secondAttribute="centerX" constant="0.5" id="Bza-Ie-BQh"/>
+                            <constraint firstItem="E7n-JU-zbD" firstAttribute="top" secondItem="j8M-ma-jcj" secondAttribute="bottom" constant="20" id="TaH-He-Vg8"/>
+                            <constraint firstAttribute="centerY" secondItem="c6o-eG-bVv" secondAttribute="centerY" id="iEk-LB-5zl"/>
+                            <constraint firstAttribute="centerX" secondItem="c6o-eG-bVv" secondAttribute="centerX" id="ni0-pX-JrV"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="PageImagesView" destination="c6o-eG-bVv" id="Kdw-RZ-zn7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BvK-KF-M9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1029.5" y="46.5"/>
+            <point key="canvasLocation" x="-961.5" y="-53.5"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="BUi-uE-QQ6">
@@ -830,12 +845,12 @@
                         <outlet property="UserPassword" destination="9Xd-Ks-Abn" id="KFc-sJ-Nlv"/>
                         <segue destination="uqG-Z1-dkh" kind="modal" identifier="MemberView" modalPresentationStyle="fullScreen" id="Pzi-m1-eVP"/>
                         <segue destination="Wmc-o8-kcD" kind="modal" identifier="TeacherView" modalPresentationStyle="fullScreen" id="vH6-13-7zB"/>
-                        <segue destination="svZ-pI-8dR" kind="modal" identifier="GuideShow" id="cK4-VM-YTD"/>
+                        <segue destination="svZ-pI-8dR" kind="modal" identifier="GuideShow" id="zIU-v2-eHZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CoR-1U-dma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-538.5" y="46.5"/>
+            <point key="canvasLocation" x="-489.5" y="-53.5"/>
         </scene>
         <!--设置-->
         <scene sceneID="yY0-TO-Caj">
@@ -1089,7 +1104,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1b-Gb-Toi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-429.5" y="1185.5"/>
+            <point key="canvasLocation" x="-517.5" y="833.5"/>
         </scene>
         <!--我的活动-->
         <scene sceneID="01w-08-Lrm">
@@ -1108,7 +1123,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7E-lp-cVZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730.5" y="1521.5"/>
+            <point key="canvasLocation" x="462.5" y="1169.5"/>
         </scene>
         <!--招募活动-->
         <scene sceneID="kBO-l2-8e3">
@@ -1125,16 +1140,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="敬老院慰问" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSl-h4-72n">
-                                            <rect key="frame" x="8" y="13" width="334" height="23"/>
+                                            <rect key="frame" x="8" y="14" width="334" height="23"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始: 2015-4-10 13:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0X-2C-9Jv">
-                                            <rect key="frame" x="8" y="36" width="154" height="21"/>
+                                            <rect key="frame" x="8" y="37" width="216" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="NzI-N4-Jus"/>
-                                                <constraint firstAttribute="width" constant="154" id="l6T-Rl-FdR"/>
+                                                <constraint firstAttribute="width" constant="216" id="l6T-Rl-FdR"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1145,7 +1160,7 @@
                                         <constraint firstAttribute="trailing" secondItem="aSl-h4-72n" secondAttribute="trailing" id="IVU-WB-iuX"/>
                                         <constraint firstItem="s0X-2C-9Jv" firstAttribute="leading" secondItem="aSl-h4-72n" secondAttribute="leading" id="P2D-pR-Bf2"/>
                                         <constraint firstItem="aSl-h4-72n" firstAttribute="leading" secondItem="5Y0-SO-vH2" secondAttribute="leading" constant="8" id="jCC-Gj-M7R"/>
-                                        <constraint firstItem="aSl-h4-72n" firstAttribute="top" secondItem="5Y0-SO-vH2" secondAttribute="top" constant="13" id="nGB-hd-qLR"/>
+                                        <constraint firstItem="aSl-h4-72n" firstAttribute="top" secondItem="5Y0-SO-vH2" secondAttribute="top" constant="14" id="nGB-hd-qLR"/>
                                         <constraint firstItem="s0X-2C-9Jv" firstAttribute="top" secondItem="aSl-h4-72n" secondAttribute="bottom" id="sj8-fU-4Yq"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -1167,7 +1182,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wep-qc-WWQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1184.5" y="783.5"/>
+            <point key="canvasLocation" x="916.5" y="430.5"/>
         </scene>
         <!--生成二维码-->
         <scene sceneID="mvl-67-YVS">
@@ -1202,7 +1217,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75y-z2-FaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2318.5" y="1146.5"/>
+            <point key="canvasLocation" x="1946.5" y="786.5"/>
         </scene>
         <!--Rcode View Controller-->
         <scene sceneID="WwQ-DO-lfU">
@@ -1241,7 +1256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqe-yd-im1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796.5" y="1998.5"/>
+            <point key="canvasLocation" x="1479.5" y="1550.5"/>
         </scene>
         <!--活动详情-->
         <scene sceneID="m3N-Kj-PNP">
@@ -1491,7 +1506,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gnm-v2-T04" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1851.5" y="1146.5"/>
+            <point key="canvasLocation" x="1479.5" y="786.5"/>
         </scene>
         <!--所有活动-->
         <scene sceneID="ogr-w8-e6W">
@@ -1562,7 +1577,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7Z-Io-2Gu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1184.5" y="-284.5"/>
+            <point key="canvasLocation" x="1152.5" y="-576.5"/>
         </scene>
         <!--所有活动-->
         <scene sceneID="eBQ-Wo-Esn">
@@ -1581,7 +1596,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yPw-wn-VUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="716.5" y="-284.5"/>
+            <point key="canvasLocation" x="684.5" y="-576.5"/>
         </scene>
         <!--TeacherMainView-->
         <scene sceneID="qbo-P9-URC">
@@ -1602,7 +1617,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nju-9N-GrV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.5" y="-284.5"/>
+            <point key="canvasLocation" x="20.5" y="-576.5"/>
         </scene>
         <!--招募活动-->
         <scene sceneID="3XJ-e2-3hp">
@@ -1621,7 +1636,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8I-dL-Jll" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730.5" y="784.5"/>
+            <point key="canvasLocation" x="462.5" y="432.5"/>
         </scene>
         <!--MemberMainView-->
         <scene sceneID="1cZ-Oq-b1V">
@@ -1642,7 +1657,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ysn-XD-0iB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="60.5" y="1185.5"/>
+            <point key="canvasLocation" x="-27.5" y="833.5"/>
         </scene>
         <!--设置-->
         <scene sceneID="eEu-74-UbR">

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7805AC061AF8525E00E9076D /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7805AC051AF8525E00E9076D /* PageContentViewController.swift */; };
 		782195951AE2462E0018AC26 /* UserReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782195941AE2462E0018AC26 /* UserReposity.swift */; };
 		782195971AE2463A0018AC26 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782195961AE2463A0018AC26 /* LoginViewController.swift */; };
 		782195E51AE24AC80018AC26 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782195E41AE24AC80018AC26 /* SwiftyJSON.swift */; };
@@ -42,7 +43,6 @@
 		78F663DF1AEF0DF1004B12C1 /* GetUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F663DE1AEF0DF1004B12C1 /* GetUserCell.swift */; };
 		78F663E11AEF1883004B12C1 /* EditUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F663E01AEF1883004B12C1 /* EditUserCell.swift */; };
 		78F663E31AEF7987004B12C1 /* UserIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F663E21AEF7987004B12C1 /* UserIdentity.swift */; };
-		78F663E51AEF875D004B12C1 /* 2015.png in Resources */ = {isa = PBXBuildFile; fileRef = 78F663E41AEF875D004B12C1 /* 2015.png */; };
 		78F663E71AEF9211004B12C1 /* QRcodeShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F663E61AEF9211004B12C1 /* QRcodeShowViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7805AC051AF8525E00E9076D /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		782195941AE2462E0018AC26 /* UserReposity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserReposity.swift; sourceTree = "<group>"; };
 		782195961AE2463A0018AC26 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		782195E41AE24AC80018AC26 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -96,7 +97,6 @@
 		78F663DE1AEF0DF1004B12C1 /* GetUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserCell.swift; sourceTree = "<group>"; };
 		78F663E01AEF1883004B12C1 /* EditUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditUserCell.swift; sourceTree = "<group>"; };
 		78F663E21AEF7987004B12C1 /* UserIdentity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserIdentity.swift; sourceTree = "<group>"; };
-		78F663E41AEF875D004B12C1 /* 2015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2015.png; path = ../../../../Pictures/2015.png; sourceTree = "<group>"; };
 		78F663E61AEF9211004B12C1 /* QRcodeShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRcodeShowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +147,6 @@
 				7884EB831ADBA02500CC97F0 /* AppDelegate.swift */,
 				7884EB851ADBA02500CC97F0 /* ViewController.swift */,
 				782195E41AE24AC80018AC26 /* SwiftyJSON.swift */,
-				78F663E41AEF875D004B12C1 /* 2015.png */,
 				7884EB8A1ADBA02500CC97F0 /* Images.xcassets */,
 				7884EBA31ADBC54D00CC97F0 /* Main.storyboard */,
 				7884EB8C1ADBA02500CC97F0 /* LaunchScreen.xib */,
@@ -202,6 +201,7 @@
 				782195961AE2463A0018AC26 /* LoginViewController.swift */,
 				78433E0C1AE4E86100D2E72F /* MainTabBarViewController.swift */,
 				78F663E61AEF9211004B12C1 /* QRcodeShowViewController.swift */,
+				7805AC051AF8525E00E9076D /* PageContentViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -328,7 +328,6 @@
 				7884EBA51ADBC54D00CC97F0 /* Main.storyboard in Resources */,
 				7884EB8E1ADBA02500CC97F0 /* LaunchScreen.xib in Resources */,
 				7884EB8B1ADBA02500CC97F0 /* Images.xcassets in Resources */,
-				78F663E51AEF875D004B12C1 /* 2015.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +372,7 @@
 				78CC75A61ADE552500CFC2CB /* EditUserInfo.swift in Sources */,
 				78CC75A41ADE4FA800CFC2CB /* IUserReposity.swift in Sources */,
 				78F663DF1AEF0DF1004B12C1 /* GetUserCell.swift in Sources */,
+				7805AC061AF8525E00E9076D /* PageContentViewController.swift in Sources */,
 				78CC75A21ADE10A200CFC2CB /* IActivityReposity.swift in Sources */,
 				78F0E95F1AE1108300562E8D /* ActivityReposity.swift in Sources */,
 				78D8BABA1AE7604900CBBA9A /* PtrUpdateData.swift in Sources */,
