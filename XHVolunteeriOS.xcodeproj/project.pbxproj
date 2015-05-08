@@ -17,7 +17,6 @@
 		7884EB8B1ADBA02500CC97F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7884EB8A1ADBA02500CC97F0 /* Images.xcassets */; };
 		7884EB8E1ADBA02500CC97F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7884EB8C1ADBA02500CC97F0 /* LaunchScreen.xib */; };
 		7884EB9A1ADBA02500CC97F0 /* XHVolunteeriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7884EB991ADBA02500CC97F0 /* XHVolunteeriOSTests.swift */; };
-		7884EBA51ADBC54D00CC97F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7884EBA31ADBC54D00CC97F0 /* Main.storyboard */; };
 		78C37EC81AFAF69600C59556 /* PersonalInformationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C37EC71AFAF69600C59556 /* PersonalInformationTableViewController.swift */; };
 		78C37ECA1AFAF6E500C59556 /* EditPersonalInformationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C37EC91AFAF6E500C59556 /* EditPersonalInformationTableViewController.swift */; };
 		78C37ECE1AFB4AC900C59556 /* GetTeacherPerImfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C37ECD1AFB4AC900C59556 /* GetTeacherPerImfor.swift */; };
@@ -75,7 +74,6 @@
 		7884EB931ADBA02500CC97F0 /* XHVolunteeriOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XHVolunteeriOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7884EB981ADBA02500CC97F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7884EB991ADBA02500CC97F0 /* XHVolunteeriOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XHVolunteeriOSTests.swift; sourceTree = "<group>"; };
-		7884EBA41ADBC54D00CC97F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78C37EC71AFAF69600C59556 /* PersonalInformationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInformationTableViewController.swift; sourceTree = "<group>"; };
 		78C37EC91AFAF6E500C59556 /* EditPersonalInformationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPersonalInformationTableViewController.swift; sourceTree = "<group>"; };
 		78C37ECD1AFB4AC900C59556 /* GetTeacherPerImfor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTeacherPerImfor.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				7884EB851ADBA02500CC97F0 /* ViewController.swift */,
 				782195E41AE24AC80018AC26 /* SwiftyJSON.swift */,
 				7884EB8A1ADBA02500CC97F0 /* Images.xcassets */,
-				7884EBA31ADBC54D00CC97F0 /* Main.storyboard */,
 				7884EB8C1ADBA02500CC97F0 /* LaunchScreen.xib */,
 				7884EB811ADBA02500CC97F0 /* Supporting Files */,
 			);
@@ -337,7 +334,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7884EBA51ADBC54D00CC97F0 /* Main.storyboard in Resources */,
 				7884EB8E1ADBA02500CC97F0 /* LaunchScreen.xib in Resources */,
 				7884EB8B1ADBA02500CC97F0 /* Images.xcassets in Resources */,
 			);
@@ -422,14 +418,6 @@
 				7884EB8D1ADBA02500CC97F0 /* Base */,
 			);
 			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		7884EBA31ADBC54D00CC97F0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7884EBA41ADBC54D00CC97F0 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
