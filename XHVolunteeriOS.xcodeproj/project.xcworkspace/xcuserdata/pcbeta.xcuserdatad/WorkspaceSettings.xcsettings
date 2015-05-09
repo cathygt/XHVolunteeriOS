@@ -5,6 +5,10 @@
 	<key>HasAskedToTakeAutomaticSnapshotBeforeSignificantChanges</key>
 	<true/>
 	<key>SnapshotAutomaticallyBeforeSignificantChanges</key>
+<<<<<<< HEAD
 	<true/>
+=======
+	<false/>
+>>>>>>> origin/Main
 </dict>
 </plist>
