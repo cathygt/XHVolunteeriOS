@@ -18,7 +18,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var LoginButton: UIButton!
     
-    
     let UserNameKey = ""
     let PwdKey = ""
     let IsFirstLaunch = "ifl"
