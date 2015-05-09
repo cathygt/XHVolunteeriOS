@@ -11,7 +11,6 @@ import UIKit
 class EditPersonalInformationTableViewController: UITableViewController {
     
     var UserEditOut:EditOut?
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
